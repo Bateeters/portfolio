@@ -32,3 +32,39 @@
 .contact-card {
     grid-area: 9/8/10/13;
 }
+
+@media (min-width: 768px) and (max-width: 1029px) {
+    .projects-card {
+        grid-area: 1/1/4/13;
+    }
+
+    .profile-card {
+        grid-area: 4/1/6/13;
+    }
+
+    .dev-card {
+        grid-area: 6/1/9/13;
+    }
+
+    .skills-card {
+        grid-area: 9/1/12/13;
+    }
+
+    .resume-card {
+        grid-area: 12/8/13/13;
+    }
+
+    .ui-card {
+        grid-area: 12/1/15/8;
+    }
+
+    .contact-card {
+        grid-area: 13/8/15/13;
+    }
+}
+
+@media (max-width: 767px) {
+    .grid-container {
+        display: block;
+    }
+}
