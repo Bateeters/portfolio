@@ -1,6 +1,10 @@
 body {
     background-color: black;
     text-wrap: pretty;
+    background-image:url("../assets/images/ui/BackgroundDust.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .min-height-100 {

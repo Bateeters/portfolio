@@ -1,3 +1,9 @@
 .card {
     border-radius: 20px;
+    background-color: rgb(16, 2, 29);
+    background: linear-gradient(rgb(16, 2, 29), rgb(16, 2, 29)) padding-box, linear-gradient(gold, rgb(255, 232, 211), goldenrod) border-box;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    color: whitesmoke;
 }
+
