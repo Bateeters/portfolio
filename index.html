@@ -18,39 +18,97 @@
   <div class="container">
     <div class="row justify-content-center align-content-center min-height-100">
       <div class="col-lg-10 col-12">
-        <div class="grid-container">
-          <div class="m-2 p-4 card projects-card">
-            <h3>Projects</h3>
-          </div>
-          <div class="m-2 p-4 card profile-card">
-            <h3>Profile Status</h3>
+        <div class="row">
+          <div class="col-9">
+            <!-- Projects Card Start -->
+            <div class="card">
+              <h3>Projects</h3>
+              <div class="d-flex align-items-start">
+                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="border-right: 1px solid peachpuff; padding: 0 20px; margin: 15px 0;">
+                  <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" style="height: 35px; width: 35px; background-color: red;"></button>
+                  <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false" style="height: 35px; width: 35px; background-color: red;"></button>
+                  <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false" style="height: 35px; width: 35px; background-color: red;"></button>
+                  <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false" style="height: 35px; width: 35px; background-color: red;"></button>
+                </div>
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">1
+
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">2</div>
+                  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">3</div>
+                  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">4</div>
+                </div>
+              </div>
+            </div>
+            <!-- Projects Card End -->
+            
+            <!-- Profile Card Start -->
+            <div class="card">
+              <span>Hey there, I'm <strong>Brian Teeters</strong> 1-2 sentence value statement should go here. just as a brief overview of skills and experience. Nothing too extensive that would take too much space.</span>
+              <div class="row pt-4 justify-content-start">
+                <div class="col-3">
+                  <a href="#" class="btn btn-primary w-100">GitHub</a>
+                </div>
+                <div class="col-3">
+                  <a href="#" class="btn btn-primary w-100">LinkedIn</a>
+                </div>
+                <div class="col-5">
+                  <a href="#" class="btn btn-primary w-100">Contact Me</a>
+                </div>
+              </div>
+            </div>
+            <!-- Profile Card End -->
           </div>
 
-          <!-- Dev Activity Card Start -->
-          <div class="m-2 p-4 card dev-card">
-            <h3>Dev Activity</h3>
-            <img class="github-img"
-              src="https://ghchart.rshah.org/Bateeters"
-              alt="GitHub contribution activity"
-            />
+          <!-- Skills Card Start -->
+          <div class="col-3">
+            <div class="card h-100">
+              <h3>Skills</h3>
+            </div>
           </div>
-          <!-- Dev Activity Card End -->
-
-          <div class="m-2 p-4 card skills-card">
-            <h3>Skills</h3>
+          <!-- Skills Card End -->
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <div class="card h-100">
+              <h3>UI Work</h3>
+            </div>
           </div>
-          <div class="m-2 p-4 card resume-card">
-            <h3>Resume</h3>
-          </div>
-          <div class="m-2 p-4 card ui-card">
-            <h3>UI Work</h3>
-          </div>
-          <div class="m-2 p-4 card contact-card">
-            <h3>Contact Me</h3> 
+          <div class="col-8">
+            <!-- Dev Activity Card Start -->
+            <a href="#">
+              <div class="card">
+                <img class="github-img"
+                  src="https://ghchart.rshah.org/Bateeters"
+                  alt="GitHub contribution activity"
+                />
+                <div class="row">
+                  Check and see what I'm currently working on.
+                </div>
+              </div>
+            </a>
+            <!-- Dev Activity Card End -->
+             <div class="row">
+              <div class="col-5">
+                <a class="resume-card resume-link-text btn btn-primary d-flex justify-content-center align-items-center" href="./assets/resume/Brian_Teeters_Resume.pdf" target="_blank">
+                  <span>Click to View Resume</span>
+                </a>
+              </div>
+              <div class="col-7">
+                <div class="card contact-card h-100">
+                  <div class="d-flex justify-content-between flex-wrap">
+                    <a href="#">BrianTeetersDesign@Gmail.com</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">GitHub</a>
+                  </div>
+                </div>
+              </div>
+             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
