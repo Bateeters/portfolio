@@ -1,3 +1,7 @@
+:root {
+    --custom-gold: rgb(245, 183, 95);
+}
+
 body {
     background-color: black;
     text-wrap: pretty;
@@ -15,8 +19,39 @@ body {
     object-fit:cover;
 }
 
+.project-nav {
+    border-right: 2px solid indigo;
+    padding-right: 10px;
+}
+
+.project-nav .nav-link {
+    border: 2px solid var(--custom-gold);
+    color: white;
+}
+
+.project-nav .nav-link:hover,
+.project-nav .nav-link.active {
+    border: 2px solid var(--custom-gold);
+    background-color: var(--custom-gold);
+    color: indigo;
+}
+
 .github-img {
     filter: invert(1);
+}
+
+.github-activity-link {
+    text-decoration: none;
+}
+
+.github-activity-link span {
+    transition: all 0.3s ease-in-out;
+}
+
+
+.github-activity-link:hover span {
+    color: var(--custom-gold);
+    transition: all 0.3s ease-in-out;
 }
 
 .resume-link-text {
@@ -26,4 +61,18 @@ body {
 
 .btn {
     border-radius: 20px;
+}
+
+.btn-primary {
+    background-color: transparent;
+    border: 2px solid var(--custom-gold);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    transition: all 0.3s ease-in-out;
+    background-color:var(--custom-gold);
+    border: 2px solid var(--custom-gold);
+    color: indigo;
+    font-weight: 600;
 }
