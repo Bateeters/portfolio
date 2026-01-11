@@ -17,56 +17,57 @@
 <body>
   <div class="container">
     <div class="row justify-content-center align-content-center min-height-100">
-      <div class="col-lg-10 col-12">
-        <div class="row">
+      <div class="col-lg-10 col-12 my-5">
+        <div class="row mt-5">
           <div class="col-9">
-            <!-- Projects Card Start -->
-            <div class="card">
-              <div class="row">
-                <div class="col-1">
-                  <div class="nav flex-column nav-pills project-nav" role="tablist">
-                    <button class="nav-link active" data-project="1" type="button">1</button>
-                    <button class="nav-link" data-project="2" type="button">2</button>
-                    <button class="nav-link" data-project="3" type="button">3</button>
-                    <button class="nav-link" data-project="4" type="button">4</button>
+            <div class="row h-100">
+              <!-- Projects Card Start -->
+              <div class="card col-12 p-3 mb-2">
+                <div class="row justify-content-center h-100">
+                  <div class="col-1 d-flex">
+                    <div class="nav flex-column nav-pills project-nav justify-content-between" role="tablist">
+                      <button class="nav-link active" data-project="1" type="button">1</button>
+                      <button class="nav-link" data-project="2" type="button">2</button>
+                      <button class="nav-link" data-project="3" type="button">3</button>
+                      <button class="nav-link" data-project="4" type="button">4</button>
+                    </div>
                   </div>
-                </div>
-                <div class="col-11">
-                  <div id="project-content" class="project-content row">
-                    <!-- JS Renders content here -->
+                  <div class="col-11">
+                    <div id="project-content" class="project-content row h-100">
+                      <!-- JS Renders content here -->
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- Projects Card End -->
-            
-            <!-- Profile Card Start -->
-            <div class="card">
-              <span>
-                Hey there, I'm <strong>Brian Teeters.</strong> Leveraging my strong design background, I build responsive, user-centric web interfaces.
-              </span>
-              <br>
-              <span>
-                <strong>Focus:</strong> Front-End Development, UI Implementation, Component-Based Design
-              </span>
-              <div class="row pt-4 justify-content-start">
-                <div class="col-3">
-                  <a href="#" class="btn btn-primary w-100">GitHub</a>
-                </div>
-                <div class="col-3">
-                  <a href="#" class="btn btn-primary w-100">LinkedIn</a>
-                </div>
-                <div class="col-5 col-md-3 ms-md-auto">
-                  <a href="#" class="btn btn-primary w-100">Contact Me</a>
+              <!-- Projects Card End -->
+              <!-- Profile Card Start -->
+              <div class="card col-12 p-3 mt-2">
+                <span>
+                  Hey there, I'm <strong>Brian Teeters.</strong> Leveraging my strong design background, I build responsive, user-centric web interfaces.
+                </span>
+                <br>
+                <span>
+                  <strong>Focus:</strong> Front-End Development, UI Implementation, Component-Based Design
+                </span>
+                <div class="row pt-4 justify-content-start">
+                  <div class="col-3">
+                    <a href="#" class="btn btn-primary w-100">GitHub Profile</a>
+                  </div>
+                  <div class="col-3">
+                    <a href="#" class="btn btn-primary w-100">LinkedIn</a>
+                  </div>
+                  <div class="col-5 col-md-3 ms-md-auto">
+                    <a href="#" class="btn btn-primary w-100">Contact Me</a>
+                  </div>
                 </div>
               </div>
+              <!-- Profile Card End -->
             </div>
-            <!-- Profile Card End -->
           </div>
 
           <!-- Skills Card Start -->
           <div class="col-3">
-            <div class="card h-100">
+            <div class="card p-3 h-100">
               <h3>Skills</h3>
               <span><strong>Primary Focus:</strong></span>
               <span>HTML • CSS • JavaScript • React • Bootstrap • Responsive UI • Git</span>
@@ -80,9 +81,7 @@
                   <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#skillsAccordion">
                     <div class="accordion-body">
                       <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript (ES6+)</li>
+                        <li>HTML / CSS / JS</li>
                         <li>ReactJS</li>
                         <li>Bootstrap</li>
                         <li>Responsive & Accessible Design</li>
@@ -149,7 +148,7 @@
         </div>
         <div class="row">
           <div class="col-4">
-            <div class="card h-100">
+            <div class="card h-100 p-3 my-3">
               <h3>UI Work</h3>
               <span>
                 Background in visual communication and several years as a senior graphic designer. 
@@ -161,7 +160,7 @@
           <div class="col-8">
             <!-- Dev Activity Card Start -->
             <a href="https://github.com/Bateeters?tab=repositories" target="_blank">
-              <div class="card">
+              <div class="card p-3 my-3">
                 <img class="github-img"
                   src="https://ghchart.rshah.org/Bateeters"
                   alt="GitHub contribution activity"
@@ -173,13 +172,13 @@
             </a>
             <!-- Dev Activity Card End -->
              <div class="row">
-              <div class="col-5">
-                <a class="resume-card resume-link-text btn btn-primary d-flex justify-content-center align-items-center" href="./assets/resume/Brian_Teeters_Resume.pdf" target="_blank">
+              <div class="col-5 my-3">
+                <a class="resume-link-text btn btn-primary d-flex justify-content-center align-items-center" href="./assets/resume/Brian_Teeters_Resume.pdf" target="_blank">
                   <span>Click to View Resume</span>
                 </a>
               </div>
               <div class="col-7">
-                <div class="card contact-card h-100">
+                <div class="card h-100 p-3 my-3">
                   <div class="d-flex justify-content-between flex-wrap">
                     <a href="#">BrianTeetersDesign@Gmail.com</a>
                     <a href="#">LinkedIn</a>

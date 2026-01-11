@@ -11,6 +11,10 @@ body {
     min-height: 100vh;
 }
 
+.project-image {
+    object-fit:cover;
+}
+
 .github-img {
     filter: invert(1);
 }

@@ -7,22 +7,35 @@ function renderProject(projectId) {
     const project = projects.find(p => p.id === projectId);
     if (!project) return;
 
+    const linkButtons = Object.entries(project.links).map(([text, href]) => {
+        return `
+            <a href="${href}" class="btn btn-primary" target="_blank">${text}</a>
+        `
+    }).join("");
+
     contentEl.innerHTML = `
     <div class="col-5">
-        <h3 style="background-color: blue;">${project.title}</h3>
-        <img class="w-100" src="${project.image}" alt="${project.title}" style="background-color: green;">
+        <img class="w-100 h-100 project-image" src="${project.image}" alt="${project.title}">
     </div>
-    <div class="col-5">
-        <p style="background-color: pink;">${project.description}</p>
-        <div style="background-color: purple;">
-            <a href="${project.links.live}" target="_blank">Live</a>
-            <a href="${project.links.repo}" target="_blank">GitHub</a>
+    <div class="col-7 d-flex flex-column">
+        <div class="row">
+            <div class="col-7 d-flex flex-column justify-content-between">
+                <h3>${project.title}</h3>
+                <p>${project.description}</p>
+            </div>
+            <div class="col-5">
+                <div class="row justify-content-between h-100">
+                    <div>
+                        <ul>
+                            ${project.tech.map(t => `<li>${t}</li>`).join("")}
+                        </ul>
+                    </div>
+                    <div class="d-flex flex-column mt-auto">
+                        ${linkButtons}
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="col-2">
-        <ul style="background-color: orange;">
-            ${project.tech.map(t => `<li>${t}</li>`).join("")}
-        </ul>
     </div>
     `;
 }
