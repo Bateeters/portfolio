@@ -1,5 +1,6 @@
 :root {
     --custom-gold: rgb(245, 183, 95);
+    --custom-dark-purple: rgb(16, 2, 29);
 }
 
 body {
@@ -14,6 +15,10 @@ body {
 
 .min-height-100 {
     min-height: 100vh;
+}
+
+strong {
+    color: var(--custom-gold);
 }
 
 .project-image {
@@ -65,7 +70,7 @@ body {
 }
 
 .btn-primary {
-    background-color: rgb(16, 2, 29);
+    background-color: var(--custom-dark-purple);
     border: 2px solid var(--custom-gold);
     transition: all 0.3s ease-in-out;
 
@@ -88,4 +93,35 @@ body {
         transition: all 0.3s ease-in-out;
     }
 }
+
+.accordion-item {
+    border: 1px solid var(--custom-gold);
+    background-color: var(--custom-dark-purple);
+}
+
+
+
+.accordion-button {
+    &:not(.collapsed),
+    &.collapsed:hover{
+    background-color: var(--custom-gold) !important;
+    color: indigo;
+
+        &::after {
+            filter:brightness(0.60) hue-rotate(45deg);
+        }
+    }
+
+    &.collapsed {
+        background-color: indigo !important;
+        color: white;
+
+        &::after{
+            filter: invert(1);
+        }
+    }
+
+}
+
+
 

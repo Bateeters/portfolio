@@ -9,7 +9,7 @@ function renderProject(projectId) {
 
     const linkButtons = Object.entries(project.links).map(([text, href]) => {
         return `
-            <a href="${href}" class="btn btn-primary" target="_blank">${text}</a>
+            <a href="${href}" class="btn btn-primary mt-3" target="_blank">${text}</a>
         `
     }).join("");
 
@@ -18,8 +18,8 @@ function renderProject(projectId) {
         <img class="w-100 h-100 project-image" src="${project.image}" alt="${project.title}">
     </div>
     <div class="col-7 d-flex flex-column">
-        <div class="row">
-            <div class="col-7 d-flex flex-column justify-content-between">
+        <div class="row h-100">
+            <div class="col-7">
                 <h3>${project.title}</h3>
                 <p>${project.description}</p>
             </div>
@@ -27,7 +27,7 @@ function renderProject(projectId) {
                 <div class="row justify-content-between h-100">
                     <div>
                         <ul>
-                            ${project.tech.map(t => `<li>${t}</li>`).join("")}
+                            ${project.tech.map(t => `<li class="pb-1">${t}</li>`).join("")}
                         </ul>
                     </div>
                     <div class="d-flex flex-column mt-auto">
