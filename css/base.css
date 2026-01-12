@@ -65,15 +65,27 @@ body {
 }
 
 .btn-primary {
-    background-color: transparent;
+    background-color: rgb(16, 2, 29);
     border: 2px solid var(--custom-gold);
     transition: all 0.3s ease-in-out;
+
+    &:hover {
+        transition: all 0.3s ease-in-out;
+        background-color:var(--custom-gold);
+        border: 2px solid var(--custom-gold);
+        color: indigo;
+        font-weight: 600;
+    }
 }
 
-.btn-primary:hover {
+.contact-link {
+    text-decoration: none;
+    color: white;
     transition: all 0.3s ease-in-out;
-    background-color:var(--custom-gold);
-    border: 2px solid var(--custom-gold);
-    color: indigo;
-    font-weight: 600;
+
+    &:hover{
+        color: var(--custom-gold);
+        transition: all 0.3s ease-in-out;
+    }
 }
+
