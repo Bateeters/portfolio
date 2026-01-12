@@ -74,12 +74,14 @@ strong {
     border: 2px solid var(--custom-gold);
     transition: all 0.3s ease-in-out;
 
-    &:hover {
+    &:hover,
+    &:focus {
         transition: all 0.3s ease-in-out;
         background-color:var(--custom-gold);
         border: 2px solid var(--custom-gold);
         color: indigo;
         font-weight: 600;
+        box-shadow: none;
     }
 }
 
@@ -119,6 +121,10 @@ strong {
         &::after{
             filter: invert(1);
         }
+    }
+
+    &:focus {
+        box-shadow: none;
     }
 
 }
