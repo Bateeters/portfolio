@@ -7,6 +7,7 @@ body {
     background-color: black;
     text-wrap: pretty;
     background-image:url("../assets/images/ui/BackgroundDust.png");
+    background-image: url("../assets/images/ui/OrangePalms.png") !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
