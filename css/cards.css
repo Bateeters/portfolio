@@ -1,0 +1,14 @@
+.card {
+    border-radius: 20px;
+    background-color: rgb(16, 2, 29);
+    border: 2px solid rgb(57, 0, 98);
+    border-radius: 15px;
+    color: whitesmoke;
+    transition: all 0.4s ease-in-out;
+}
+
+.card:hover {
+    border: 2px solid rgb(245, 183, 95);
+    transition: all 0.4s ease-in-out;
+}
+

@@ -1,1461 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Brian Teeters Portfolio</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brian Teeters Portfolio</title>
 
-    <!-- icon -->
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/cards.css">
 
-    <!-- Google Fonts Roboto -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-    />
+</head>
+<body>
+  <div class="container">
+    <div class="row min-vh-100 d-flex align-items-center justify-content-center">
+      <div class="col-lg-10 col-11 my-lg-5 mb-5">
+        <div class="row mt-5">
+          <div class="col-xl-9 col-lg-12">
+            <div class="row h-100">
+              <!-- Projects Card Start -->
+              <div class="card col-12 p-3 mb-2">
+                <div class="row justify-content-center h-100">
+                  <div class="col-xl-1 col-12 d-xl-flex pb-lg-3 sticky-nav-lg">
+                    <div class="nav flex-xl-column nav-pills project-nav justify-content-between" role="tablist">
+                      <button class="nav-link active" data-project="1" type="button">1</button>
+                      <button class="nav-link" data-project="2" type="button">2</button>
+                      <button class="nav-link" data-project="3" type="button">3</button>
+                      <button class="nav-link" data-project="4" type="button">4</button>
+                    </div>
+                  </div>
+                  <div class="col-lg-11">
+                    <div id="project-content" class="project-content row h-100">
+                      <!-- JS Renders content here -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Projects Card End -->
+              <!-- Profile Card Start -->
+              <div class="card col-12 p-3 mt-2">
+                <span>
+                  Hey there, I'm <strong>Brian Teeters</strong>, a <strong>Front-End Developer</strong> with 2+ years of experience 
+                  building responsive, production-ready web interfaces. My background in visual communication helps me connect 
+                  design and development, allowing me to translate wireframes and product goals into clean, maintainable code with 
+                  a focus on usability, clarity, and consistency.
+                </span>
+                <br>
+                <span>
+                  <strong>Focus:</strong> Front-End Development, UI Implementation, Component-Based Design
+                </span>
+                <div class="row pt-4 justify-content-md-start justify-content-center">
+                  <div class="col-md-3 col-8 mt-md-0 mt-3">
+                    <a href="https://github.com/Bateeters" class="btn btn-primary w-100" target="_blank">GitHub Profile</a>
+                  </div>
+                  <div class="col-md-3 col-8 mt-md-0 mt-3">
+                    <a href="https://www.linkedin.com/in/brian-teeters-a23122134/" class="btn btn-primary w-100" target="_blank">LinkedIn</a>
+                  </div>
+                  <div class="col-md-3 col-8 ms-md-auto mt-md-0 mt-3">
+                    <a href="mailto:BrianTeetersDesign@gmail.com" class="btn btn-primary w-100">Contact Me</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Profile Card End -->
+            </div>
+          </div>
 
-    <!-- MDB -->
-    <link rel="stylesheet" href="css/mdb.min.css" />
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
-  </head>
-  <header>
-    <nav class="ps-4 ps-md-5">
-
-      <!-- Home Button In Nav Bar -->
-        <div class="home">
-            <a href="#" aria-lebel="home">
-                <span>Brian Teeters</span>
+          <!-- Skills Card Start -->
+          <div class="col-xl-3 col-lg-12 p-0 ps-xl-3 my-xl-0 my-3">
+            <div class="card p-3 h-100">
+              <h3>Skills</h3>
+              <span><strong>Primary Focus:</strong></span>
+              <span class="pb-3">HTML • CSS • JavaScript • React • Bootstrap • Responsive UI • Git</span>
+              <div class="accordion" id="skillsAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Front-End
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#skillsAccordion">
+                    <div class="accordion-body">
+                      <ul class="px-3">
+                        <li>HTML / CSS / JS</li>
+                        <li>ReactJS</li>
+                        <li>Bootstrap</li>
+                        <li>Responsive and Accessible Design</li>
+                        <li>Cross-Browser Optimization</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Back-End / APIs
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#skillsAccordion">
+                    <div class="accordion-body">
+                      <ul class="px-3">
+                        <li>Node.js</li>
+                        <li>REST APIs</li>
+                        <li>MySQL / SQL</li>
+                        <li>Exposure to .NET Core, Python, Django</li>
+                      </ul>                    
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Design and UX / UI
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#skillsAccordion">
+                    <div class="accordion-body">
+                      <ul class="px-3">
+                        <li>Wireframing and Prototyping</li>
+                        <li>Adobe Creative Cloud</li>
+                        <li>UI Layout Systems</li>
+                        <li>Branding and Marketing Alignment</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Tools
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#skillsAccordion">
+                    <div class="accordion-body">
+                      <ul class="px-3">
+                        <li>Git and GitHub</li>
+                        <li>VS Code / Visual Studio</li>
+                        <li>Jira, Asana</li>
+                        <li>Salesforce</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Skills Card End -->
+        </div>
+        <div class="row mt-xl-3 mb-xl-5">
+          <div class="col-xl-4 col-lg-12 p-0 pe-xl-3 pe-lg-0">
+            <div class="card p-3 h-100">
+              <h3>UI Work</h3>
+              <span class="mt-2">
+                My background in graphic design strengthens how I approach front-end development. 
+                When structuring layouts and translating wireframes into code, I make UI decisions 
+                that emphasize clarity, usability, and consistency across devices.
+              </span>
+            </div>
+          </div>
+          <div class="col-xl-8 col-lg-12 p-0 my-xl-0 my-3">
+            <!-- Dev Activity Card Start -->
+            <a href="https://github.com/Bateeters?tab=repositories" target="_blank" class="github-activity-link">
+              <div class="card p-3">
+                <img class="github-img"
+                  src="https://ghchart.rshah.org/Bateeters"
+                  alt="GitHub contribution activity"
+                />
+                <div class="row">
+                  <span class="pt-3 github-link-text">Check and see what I'm currently working on.</span>
+                </div>
+              </div>
             </a>
-        </div>
+            <!-- Dev Activity Card End -->
 
-        <!-- Side bar / hamburger menu in Nav Bar -->
-        <div id="sidebarContainer">
-            <input type="checkbox" class="openSideMenu" id="openSideMenu">
-          
-            <label for="openSideMenu" class="sideIconToggle">
-              <div class="spinner diagonal part-1"></div>
-              <div class="spinner horizontal"></div>
-              <div class="spinner diagonal part-2"></div>
-            </label>
-          
-            <div id="sideMenu">
-              <ul class="sideMenuInner">
-                <li class="active" onclick="hideSidebar()"><a href="#works" data-toggle="tab">Development</a></li>
-                <li onclick="hideSidebar()"><a href="#design" data-toggle="tab">Design</a></li>
-                <li onclick="hideSidebar()"><a href="#about" data-toggle="tab">About</a></li>
-                <li onclick="hideSidebar()"><a href="#contact" data-toggle="tab">Contact</a></li>
-              </ul>
-            </div>
-        </div>
-    </nav>  
-  </header>
-  <body>
-  <main>
-      <!-- Main Image -->
-      <div class="hero"> <!-- Reduce Size of This Image. -->
-          <div class="heroText">
-              <h4 class="headerSmall mb-2">Hello! My name is Brian Teeters</h4>
-              <!--  <h1 class="headerLarge">FULL-STACK</h1>  -->
-              <h1 class="headerLarge">DEVELOPER</h1>
-              <h1 class="headerLarge">& DESIGNER</h1>
-          </div>
-      </div> 
-
-      <!-- Work Section -->
-      <div id="works" class="container pt-5">
-        <h1 class="row justify-content-center pt-5 pb-5 sectionHead">Development Work</h1>
-        <h3 class="text-center text-md" style="margin-left: 5%; margin-right: 5%;">
-          Below, you will find a collection of larger project examples I have decided to showcase. 
-          I have tried to separate them by front-end and back-end focused. 
-          However, some projects may overlap in languages and technologies. 
-          <br><br>
-          More examples, such as smaller projects and code snippets, are available on my GitHub 
-          <a href="https://github.com/Bateeters?tab=repositories">here</a>.
-        </h3>
-
-        <!-- FRONT-END FOCUSED SECTION-->
-        <h3 class="row justify-content-center pt-5 pb-5 sectionHeadC">Front-End Focused</h3>
-
-        <!-- Project: GreenTech Innovations -->
-        <div class="container my-5">
-          <div class="row projectLayout justify-content-center align-items-center project pb-5">
-            <div class="col-lg-4 col-md-10">
-              <div class="pb-3 sectionHeadB text-center text-md-start">
-                <h3 class="sectionHeadB text-center text-md-start">GreenTech Innovations</h3>
-              </div>
-              <div class="p-3 mb-3" style="background-color: #070012;">
-                GreenTech Innovations is a web design/development project showcasing a fictional 
-                company specializing in sustainable technology solutions. Built with HTML, CSS, 
-                and JavaScript, the site features a home page and a contact form.
-              </div>
-              <div class="row justify-content-center align-items-center pt-4">
-
-                <div class="col-lg-6 col-md-4 col-12 align-items-center pb-4">
-                  <!-- vv GITHUB LINK FOR PROJECT HERE vv -->
-                   <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2"  data-mdb-ripple-color="light">
-                      <a href="https://github.com/Bateeters/GreenTech_Innovations" target="_blank">GitHub Repo</a>
-                    </button>
-                   </div>
-                </div>
-
-                <div class="col-lg-5 col-md-4 col-12 align-items-center pb-4">
-                  <!-- GitHub Pages Link -->
-                  <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2"  data-mdb-ripple-color="light">
-                      <a href="https://bateeters.github.io/GreenTech_Innovations/" target="_blank">Live Page</a>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="col-lg-12 col-md-4 col-12 align-items-center pb-4">
-                  <!-- Button trigger modal -->
-                  <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2" data-mdb-toggle="modal" data-mdb-target="#greenTechModal" data-mdb-ripple-color="light">
-                      Details
-                    </button>
-                  </div>
-                </div>
-
-              </div>
-              <div class="py-3 text-center">
-                Knowledge Used: JavaScript, HTML,<br>CSS, Responsive Design Practices
-              </div>
-            </div>
-            <div class="col-lg-7 col-md-10 mb-4 px-0" id="greenTechImg">
-              <img id="mobileImg"class="col-12" src="./img/greenTech_Innovations.png" alt="">
-            </div>
-          </div>
-
-          <!-- Modal -->
-          <div class="modal fade" id="greenTechModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content" style="background-color: #070012;">
-                    <div class="modal-header">
-                      <h4 class="modal-title" id="ModalLabel">GreenTech Innovations</h4>
-                      <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close" style="color: white;"><h2>X</h2></button>
-                    </div>
-
-                    <div class="modal-body">
-                      <p style="font-size: 1em;">
-                        GreenTech Innovations is a web-based project created to showcase a fictional 
-                        company focused on sustainable technology solutions. Utilizing HTML, CSS, and 
-                        JavaScript, the project features multiple pages, including a home page 
-                        introducing the company's mission, overview of services, and client testimonials. 
-                        An interior contact page with a form for inquiries is also available. 
-                        <br><br>
-                        The project aims to demonstrate web development skills through a cohesive, 
-                        visually appealing, and interactive website design.
-                        <br><br>
-                        The code can be found using the GitHub icon on the main page or by clicking 
-                        <a href="https://github.com/Bateeters/GreenTech_Innovations" target="_blank">
-                          <b><i>here.</i></b>
-                        </a>
-                        <br><br>
-                        A live version of it can be found 
-                        <a href="https://bateeters.github.io/GreenTech_Innovations/" target="_blank">
-                          <b><i>here.</i></b>
-                        </a>
-                      </p>
-                    </div>
-
-                    <div class="modal-footer justify-content-center">
-                      <button type="button" class="btn btn-outline-light col-5" data-mdb-dismiss="modal" style="font-size: 1em;">Close</button>
-                    </div>
-                </div>
-              </div>
-          </div>
-        </div>
-
-        <!-- Project: Library -->
-        <div class="container my-5">
-          <div class="row projectLayout justify-content-center align-items-center project pb-5">
-            <div class="col-lg-4 col-md-10">
-              <div class="pb-3 sectionHeadB text-center text-md-start">
-                <h3 class="sectionHeadB text-center text-md-start">Library Application</h3>
-              </div>
-              <div class="p-3 mb-3" style="background-color: #070012;">
-                This is a library application that allows users to manage a collection 
-                of books. Users can add new books using a form, display them on the 
-                page, update their read status, and remove them from the collection. 
-                All book data is stored in an array and dynamically managed with JavaScript.
-              </div>
-              <div class="row justify-content-center align-items-center pt-4">
-
-                <div class="col-lg-6 col-md-4 col-12 align-items-center pb-4">
-                  <!-- vv GITHUB LINK FOR PROJECT HERE vv -->
-                   <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2"  data-mdb-ripple-color="light">
-                      <a href="https://github.com/Bateeters/library_app" target="_blank">GitHub Repo</a>
-                    </button>
-                   </div>
-                </div>
-
-                <div class="col-lg-5 col-md-4 col-12 align-items-center pb-4">
-                  <!-- GitHub Pages Link -->
-                  <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2"  data-mdb-ripple-color="light">
-                      <a href="https://bateeters.github.io/library_app/" target="_blank">Live Page</a>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="col-lg-12 col-md-4 col-12 align-items-center pb-4">
-                  <!-- Button trigger modal -->
-                  <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2" data-mdb-toggle="modal" data-mdb-target="#libraryModal" data-mdb-ripple-color="light">
-                      Details
-                    </button>
-                  </div>
-                </div>
-
-              </div>
-              <div class="py-3 text-center">
-                Knowledge Used: JavaScript & DOM Manipulation,<br>HTML, CSS
-              </div>
-            </div>
-            <div class="col-lg-7 col-md-10 mb-4 px-0" id="libraryImg">
-              <img id="mobileImg"class="col-12" src="./img/library_app.png" alt="">
-            </div>
-          </div>
-
-          <!-- Modal -->
-          <div class="modal fade" id="libraryModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content" style="background-color: #070012;">
-                    <div class="modal-header">
-                      <h4 class="modal-title" id="ModalLabel">Library Application</h4>
-                      <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close" style="color: white;"><h2>X</h2></button>
-                    </div>
-
-                    <div class="modal-body">
-                      <p style="font-size: 1em;">
-                        This library application is a dynamic web app built to manage a personal book 
-                        collection. It is utilizing an array to store book objects and a form for users 
-                        to input book details like author, title, number of pages, and read status. 
-                        The form appears with a "NEW BOOK" button, and JavaScript handles the form 
-                        submission, preventing default behavior and adding the book to the array 
-                        using an object constructor.
-                        <br><br>
-                        A display function loops through the array to show each book on the webpage 
-                        as individual cards. Each book display includes buttons to remove the book 
-                        from the library and to toggle its read status. This is by using DOM elements 
-                        associated  to the book objects for easy manipulation.
-                        <br><br>
-                        The project focuses on client-side functionality, allowing users to manage 
-                        their library during their session without persistent storage. This showcases 
-                        my ability to perform basic CRUD operations and DOM manipulation, laying the 
-                        groundwork for future enhancements such as storage of the array in order to save 
-                        user input from session to session.
-                        <br><br>
-                        The code can be found using the GitHub icon on the main page or by clicking 
-                        <a href="https://github.com/Bateeters/library_app" target="_blank">
-                          <b><i>here.</i></b>
-                        </a>
-                        <br><br>
-                        If you would like to try this out for yourself, a live version of it can be found 
-                        <a href="https://bateeters.github.io/library_app/" target="_blank">
-                          <b><i>here.</i></b>
-                        </a>
-                      </p>
-                    </div>
-
-                    <div class="modal-footer justify-content-center">
-                      <button type="button" class="btn btn-outline-light col-5" data-mdb-dismiss="modal" style="font-size: 1em;">Close</button>
-                    </div>
-                </div>
-              </div>
-          </div>
-        </div>
-
-        <!-- Project: Calculator -->
-        <div class="container my-5">
-          <div class="row projectLayout justify-content-center align-items-center project pb-5">
-            <div class="col-lg-4 col-md-10">
-              <div class="pb-3 sectionHeadB text-center text-md-start">
-                <h3 class="sectionHeadB text-center text-md-start">Calculator</h3>
-              </div>
-              <div class="p-3 mb-3" style="background-color: #070012;">
-                This calculator project combines my skills in JavaScript, 
-                HTML, and CSS. It handles basic arithmetic 
-                operations, features a user-friendly interface, and uses custom 
-                functions to safely evaluate expressions without relying on eval(). 
-                I focused on clean code, user experience, and addressing edge cases 
-                like division by zero and floating-point inputs.
-              </div>
-              <div class="row justify-content-center align-items-center pt-4">
-
-                <div class="col-lg-6 col-md-4 col-12 align-items-center pb-4">
-                  <!-- vv GITHUB LINK FOR PROJECT HERE vv -->
-                   <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2"  data-mdb-ripple-color="light">
-                      <a href="https://github.com/Bateeters/Calculator" target="_blank">GitHub Repo</a>
-                    </button>
-                   </div>
-                </div>
-
-                <div class="col-lg-5 col-md-4 col-12 align-items-center pb-4">
-                  <!-- GitHub Pages Link -->
-                  <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2"  data-mdb-ripple-color="light">
-                      <a href="https://bateeters.github.io/Calculator/" target="_blank">Live Page</a>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="col-lg-12 col-md-4 col-12 align-items-center pb-4">
-                  <!-- Button trigger modal -->
-                  <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2" data-mdb-toggle="modal" data-mdb-target="#calcModal" data-mdb-ripple-color="light">
-                      Details
-                    </button>
-                  </div>
-                </div>
-
-              </div>
-              <div class="py-3 text-center">
-                Knowledge Used: JavaScript & DOM Manipulation,<br>HTML, CSS
-              </div>
-            </div>
-            <div class="col-lg-7 col-md-10 mb-4 px-0" id="calcImg">
-              <img id="mobileImg"class="col-12" src="./img/calculator.png" alt="">
-            </div>
-          </div>
-
-          <!-- Modal -->
-          <div class="modal fade" id="calcModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content" style="background-color: #070012;">
-                    <div class="modal-header">
-                      <h4 class="modal-title" id="ModalLabel">Calculator</h4>
-                      <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close" style="color: white;"><h2>X</h2></button>
-                    </div>
-
-                    <div class="modal-body">
-                      <p style="font-size: 1em;">
-                        For this project, I applied my knowledge of JavaScript, 
-                        HTML, and CSS to develop a fully functional on-screen 
-                        calculator. I implemented custom functions for addition, 
-                        subtraction, multiplication, and division to ensure 
-                        accurate and efficient calculations. To enhance the user 
-                        experience, I designed a user-friendly HTML interface with 
-                        buttons for digits, operators, an equals key, a clear button, 
-                        and a display area, using CSS to improve the visual appeal 
-                        and clearly distinguish between numbers and operators.
-                        <br><br>
-                        To ensure secure and robust expression evaluation, 
-                        I avoided risky functions like eval() and built my own 
-                        methods. I created dynamic display functions to provide 
-                        real-time feedback and implemented logic to handle 
-                        issues like division by zero, multiple decimal points, 
-                        and incomplete inputs. Additionally, I added a backspace 
-                        button for corrections and rounded decimal results to 
-                        prevent overflow, enhancing the calculator's usability.
-                        <br><br>
-                        This project helped me solidify my understanding of 
-                        fundamental web development concepts and demonstrated 
-                        my ability to create interactive, reliable, and visually 
-                        appealing web applications.
-                        <br><br>
-                        The code can be found using the GitHub icon on the main page or by clicking 
-                        <a href="https://github.com/Bateeters/Calculator" target="_blank">
-                          <b><i>here.</i></b>
-                        </a>
-                        <br><br>
-                        If you would like to try this out for yourself, a live version of it can be found 
-                        <a href="https://bateeters.github.io/Calculator/" target="_blank">
-                          <b><i>here.</i></b>
-                        </a>
-                      </p>
-                    </div>
-
-                    <div class="modal-footer justify-content-center">
-                      <button type="button" class="btn btn-outline-light col-5" data-mdb-dismiss="modal" style="font-size: 1em;">Close</button>
-                    </div>
-                </div>
-              </div>
-          </div>
-        </div>
-
-        <!-- Project: Etch-A-Sketch -->
-        <div class="container my-5">
-          <div class="row projectLayout justify-content-center align-items-center project pb-5">
-            <div class="col-lg-4 col-md-10">
-              <div class="pb-3 sectionHeadB text-center text-md-start">
-                <h3 class="sectionHeadB text-center text-md-start">Etch-A-Sketch</h3>
-              </div>
-              <div class="p-3 mb-3" style="background-color: #070012;">
-                In this project, I created a browser-based sketchpad similar to an 
-                Etch-A-Sketch to practice my DOM manipulation skills. I used JavaScript 
-                to generate a grid of div elements and Flexbox to style them. Users can 
-                draw by hovering over the grid squares, and a button allows them to reset 
-                the grid size. I also decided to add effects like random colors and 
-                progressive darkening on each square interaction.
-              </div>
-              <div class="row justify-content-center align-items-center pt-4">
-
-                <div class="col-lg-6 col-md-4 col-12 align-items-center pb-4">
-                  <!-- vv GITHUB LINK FOR PROJECT HERE vv -->
-                   <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2"  data-mdb-ripple-color="light">
-                      <a href="https://github.com/Bateeters/Etch-A-Sketch" target="_blank">GitHub Repo</a>
-                    </button>
-                   </div>
-                </div>
-
-                <div class="col-lg-5 col-md-4 col-12 align-items-center pb-4">
-                  <!-- GitHub Pages Link -->
-                  <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2"  data-mdb-ripple-color="light">
-                      <a href="https://bateeters.github.io/Etch-A-Sketch/" target="_blank">Live Page</a>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="col-lg-12 col-md-4 col-12 align-items-center pb-4">
-                  <!-- Button trigger modal -->
-                  <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2" data-mdb-toggle="modal" data-mdb-target="#etchSketchModal" data-mdb-ripple-color="light">
-                      Details
-                    </button>
-                  </div>
-                </div>
-
-              </div>
-              <div class="py-3 text-center">
-                Knowledge Used: JavaScript & DOM Manipulation,<br>HTML, CSS
-              </div>
-            </div>
-            <div class="col-lg-7 col-md-10 mb-4 px-0" id="etchSketchImg">
-              <img id="mobileImg"class="col-12" src="./img/etch_a_sketch.png" alt="">
-            </div>
-          </div>
-
-          <!-- Modal -->
-          <div class="modal fade" id="etchSketchModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content" style="background-color: #070012;">
-                    <div class="modal-header">
-                      <h4 class="modal-title" id="ModalLabel">Etch-A-Sketch</h4>
-                      <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close" style="color: white;"><h2>X</h2></button>
-                    </div>
-
-                    <div class="modal-body">
-                      <p style="font-size: 1em;">
-                        In this project, I set out to build an interactive web-based sketchpad 
-                        inspired by the classic Etch-A-Sketch toy, aiming to practice and showcase 
-                        my DOM manipulation and Flexbox layout skills. My objective was to create 
-                        a browser version of a sketchpad using JavaScript and Flexbox.
-                        <br><br>
-                        I used JavaScript to dynamically generate a 16x16 grid of square div 
-                        elements within a container div. I applied Flexbox to display them as a grid, 
-                        ensuring a clean and responsive design. For the drawing feature, I used 
-                        a hover effect that changes the color of the grid squares as the mouse 
-                        passes over them, allowing users to draw. Additionally, I added a button that 
-                        lets the user resize the grid, clearing and resizing the grid accordingly while 
-                        keeping a total width.
-                        <br><br>
-                        I enhanced the project by making each grid square change to a random color upon 
-                        interaction and implementing a feature where each interaction with a square 
-                        darkens its color by 10%, achieving a full color square after ten interactions.
-                        <br><br>
-                        This project not only highlights my technical skills but also demonstrates 
-                        my ability to solve problems, research new methods, and create engaging user experiences.
-                        <br><br>
-                        The code can be found using the GitHub icon on the main page or by clicking 
-                        <a href="https://github.com/Bateeters/Etch-A-Sketch" target="_blank">
-                          <b><i>here.</i></b>
-                        </a>
-                        <br><br>
-                        If you would like to try this out for yourself, a live version of it can be found 
-                        <a href="https://bateeters.github.io/Etch-A-Sketch/" target="_blank">
-                          <b><i>here.</i></b>
-                        </a>
-                      </p>
-                    </div>
-
-                    <div class="modal-footer justify-content-center">
-                      <button type="button" class="btn btn-outline-light col-5" data-mdb-dismiss="modal" style="font-size: 1em;">Close</button>
-                    </div>
-                </div>
-              </div>
-          </div>
-        </div>
-
-        <!-- Project: TM mobile UX/UI -->
-        <div class="container my-5">
-          <div class="row projectLayout justify-content-center align-items-center project pb-5">
-            <div class="col-lg-4 col-md-10">
-              <div class="pb-3 sectionHeadB text-center text-md-start">
-                <h3 class="sectionHeadB text-center text-md-start">Tough Mudder UX/UI Redesign</h3>
-              </div>
-              <div class="p-3 mb-3" style="background-color: #070012;">
-                This original class project focused on redesigning the Mobile UX/UI of
-                a website or application. I expanded on this and decided to code the 
-                home page, following my Adobe Xd prototype I created for the project.
-              </div>
-
-              <div class="row justify-content-center align-items-center pt-4">
-
-                <div class="col-lg-6 col-md-6 col-12 align-items-center pb-4">
-                  <!-- vv GITHUB LINK FOR PROJECT HERE vv -->
-                   <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2"  data-mdb-ripple-color="light">
-                      <a href="https://github.com/Bateeters/ToughMudderRedesign/" target="_blank">GitHub Repo</a>
-                    </button>
-                   </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6 col-12 align-items-center pb-4">
-                  <!-- GitHub Pages Link -->
-                  <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2"  data-mdb-ripple-color="light">
-                      <a href="https://bateeters.github.io/ToughMudderRedesign/" target="_blank">Live Page</a>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6 col-12 align-items-center pb-4">
-                  <!-- vv adobe Xd link to prototype vv -->
-                   <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2"  data-mdb-ripple-color="light">
-                      <a href="https://xd.adobe.com/view/4eff75d1-a463-4755-a436-6658b4309afb-1bac/?fullscreen" target="_blank">Prototype</a>
-                    </button>
-                   </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6 col-12 align-items-center pb-4">
-                  <!-- Button trigger modal -->
-                  <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2" data-mdb-toggle="modal" data-mdb-target="#project3Modal" data-mdb-ripple-color="light">
-                      Details
-                    </button>
+            <div class="row">
+              <div class="col-lg-3 col-md-4">
+                <div class="row h-100">
+                  <div class="col-12 mt-3">
+                    <a class="resume-link-text btn btn-primary d-flex justify-content-center align-items-center h-100" href="./assets/resume/Brian_Teeters_Resume.pdf" target="_blank">
+                      <span>Click to View Resume</span>
+                    </a>
                   </div>
                 </div>
               </div>
-              <div class="py-3 text-center">
-                Knowledge Used: Adobe Xd, UX/UI Practices, HTML, CSS
-              </div>
-            </div>
-            <div class="col-lg-7 col-md-10 mb-4 px-0" id="tmProjectImg">
-              <img id="mobileImg"class="col-12" src="./img/TM_Mockup.jpg" alt="">
-            </div>
-          </div>
-
-          <!-- Modal -->
-          <div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content" style="background-color: #070012;">
-                    <div class="modal-header">
-                      <h4 class="modal-title" id="ModalLabel">Tough Mudder UX/UI Redesign</h4>
-                      <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close" style="color: white;"><h2>X</h2></button>
-                    </div>
-
-                    <div class="modal-body">
-                      <p style="font-size: 1em;">
-                        This class project idea came from the repeated, personal, use of the Tough Mudder website.                         I wanted to make the Tough Mudder website easier to navigate. 
-                        I prioritized making links obvious as to where it would lead 
-                        and tell you the information that would be available on the page once clicked.<br><br>
-                        I have had trouble finding specific information on races, events, or just Tough 
-                        Mudder news in the past. With this in mind, I wanted to make the information that is currently 
-                        available on the website more easily found as some of the links were not obvious or just did not lead to 
-                        where the user expected.<br><br>The task was to only create a mobile version and 
-                        unfortunately that is all that the course time allowed for. However, I decided to expand on this project 
-                        and code the responsive home page from scratch using my HTML and CSS knowledge.
-                        <br><br>
-                        The code can be found using the GitHub icon on the main page or by clicking 
-                        <a href="https://github.com/Bateeters/ToughMudderRedesign" target="_blank">
-                          <b><i>here.</i></b>
-                        </a>
-                        <br><br>
-                        The Adobe Xd Mobile prototype is also available to go through via the Xd logo or by clicking
-                        <a href="https://xd.adobe.com/view/4eff75d1-a463-4755-a436-6658b4309afb-1bac/?fullscreen" target="_blank">
-                          <b><i>here.</i></b>
-                        </a>
-                      </p>
-                    </div>
-
-                    <div class="modal-footer justify-content-center">
-                      <button type="button" class="btn btn-outline-light col-5" data-mdb-dismiss="modal" style="font-size: 1em;">Close</button>
-                    </div>
-                </div>
-              </div>
-          </div>
-        </div>
-
-        <!-- BACK-END FOCUSED SECTION-->
-        <h3 class="row justify-content-center pt-5 pb-5 sectionHeadC">Back-End Focused</h3>
-
-        <!-- Project: To-Do List -->
-        <div class="container my-5">
-          <div class="row projectLayout justify-content-center align-items-center project pb-5">
-            <div class="col-lg-4 col-md-10">
-              <div class="pb-3 sectionHeadB text-center text-md-start">
-                <h3 class="sectionHeadB text-center text-md-start">To-Do List</h3>
-              </div>
-              <div class="p-3 mb-3" style="background-color: #070012;">
-                A personal project utilizing python (django) building a web application to keep track of a specific user's tasks.
-              </div>
-              <div class="row justify-content-center align-items-center pt-4">
-
-                <div class="col-lg-8 col-md-6 col-12 align-items-center pb-4">
-                  <!-- vv GITHUB LINK FOR PROJECT HERE vv -->
-                   <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2"  data-mdb-ripple-color="light">
-                      <a href="https://github.com/Bateeters/todo_list" target="_blank">GitHub Repo</a>
-                    </button>
-                   </div>
-                </div>
-                <div class="col-lg-5 col-md-6 col-12 align-items-center pb-4">
-                  <!-- Button trigger modal -->
-                  <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2" data-mdb-toggle="modal" data-mdb-target="#todoListModal" data-mdb-ripple-color="light">
-                      Details
-                    </button>
+              <div class="col-lg-9 col-md-8 mt-3">
+                <div class="card px-4 py-2 h-100 justify-content-center">
+                  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap">
+                    <a class="p-2 contact-link" href="mailto:BrianTeetersDesign@gmail.com">BrianTeetersDesign@gmail.com</a>
+                    <a class="p-2 contact-link" href="https://github.com/Bateeters" target="_blank">GitHub</a>
+                    <a class="p-2 contact-link" href="https://www.linkedin.com/in/brian-teeters-a23122134/" target="_blank">LinkedIn</a>
                   </div>
                 </div>
               </div>
-              <div class="py-3 text-center">
-                Knowledge Used: Python (django), HTML, CSS
-              </div>
             </div>
-            <div class="col-lg-7 col-md-10 mb-4 px-0" id="todoListImg">
-              <img id="mobileImg" class="col-12" src="./img/todoListMockup.png">
-            </div>
-          </div>
-
-          <!-- Modal -->
-          <div class="modal fade" id="todoListModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content" style="background-color: #070012;">
-                    <div class="modal-header">
-                      <h4 class="modal-title" id="ModalLabel">To-Do List</h4>
-                      <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close" style="color: white;"><h2>X</h2></button>
-                    </div>
-
-                    <div class="modal-body">
-                      <p style="font-size: 1em;">
-                        This project was something I wanted to do because it utilized django's login and database functionalities. 
-                        I removed the password restrictions to make creating a username/password faster and easier strictly for demonstration 
-                        and testing purposes only (usernames are case sensitive when logging in). Once logged in you will be able to 
-                        create, read, update, and delete (CRUD) the tasks that are specific to you and only you.
-                        <br><br>
-                        The code can be found using the GitHub icon on the main page or by clicking 
-                        <a href="https://github.com/Bateeters/todo_list" target="_blank">
-                          <b><i>here.</i></b>
-                        </a>
-                      </p>
-                    </div>
-
-                    <div class="modal-footer justify-content-center">
-                      <button type="button" class="btn btn-outline-light col-5" data-mdb-dismiss="modal" style="font-size: 1em;">Close</button>
-                    </div>
-                </div>
-              </div>
-          </div>
-        </div>    
-
-        <!-- Project: Cookbook Website -->
-        <div class="container my-5">
-          <div class="row projectLayout justify-content-center align-items-center project pb-5">
-            <div class="col-lg-4 col-md-10">
-              <div class="pb-3 sectionHeadB text-center text-md-start">
-                <h3 class="sectionHeadB text-center text-md-start">Cookbook Website</h3>
-              </div>
-              <div class="p-3 mb-3" style="background-color: #070012;">
-                A full stack personal project utilizing React and Node to create, read, update, and delete recipes and their users in databases.
-              </div>
-              <div class="row justify-content-center align-items-center pt-4">
-
-                <div class="col-lg-8 col-md-6 col-12 align-items-center pb-4">
-                  <!-- vv GITHUB LINK FOR PROJECT HERE vv -->
-                   <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2"  data-mdb-ripple-color="light">
-                      <a href="https://github.com/Bateeters/react-fullstack" target="_blank">GitHub Repo</a>
-                    </button>
-                   </div>
-                </div>
-                <div class="col-lg-5 col-md-6 col-12 align-items-center pb-4">
-                  <!-- Button trigger modal -->
-                  <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2" data-mdb-toggle="modal" data-mdb-target="#cookbookModal" data-mdb-ripple-color="light">
-                      Details
-                    </button>
-                  </div>
-                </div>
-
-              </div>
-              <div class="py-3 text-center">
-                Knowledge Used: ReactJS, NodeJS, MySQL, Insomnia, HTML, CSS
-              </div>
-            </div>
-            <div class="col-lg-7 col-md-10 mb-4 px-0" id="cookbookImg">
-              <img id="mobileImg"class="col-12"src="./img/CookMark.png" alt="">
-            </div>
-          </div>
-
-          <!-- Modal -->
-          <div class="modal fade" id="cookbookModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content" style="background-color: #070012;">
-                    <div class="modal-header">
-                      <h4 class="modal-title" id="ModalLabel">Cookbook Website</h4>
-                      <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close" style="color: white;"><h2>X</h2></button>
-                    </div>
-
-                    <div class="modal-body">
-                      <p style="font-size: 1em;">
-                        This project was started because I wanted to gain more experience with the ReactJS and NodeJS 
-                        technologies. There are many recipes utilized in my household and I gained inspiration for this when 
-                        I find myself hunting through cookbooks, saved web pages, and anything else just to find something 
-                        that was made a few weeks ago. I wanted to have a central location to digitize and hold my favorite meals.
-                        <br><br>
-                        The majority of the project was focused on the implementation and functionalities of features and the design 
-                        elements followed after. I wanted to make sure the databases were able to be used to create, read, update, 
-                        and delete everything that is needed when it comes to cooking and recipes. I decided to utilize the React and 
-                        Node full stack because it seems to be one of the more popular and widely used languages/technologies for this 
-                        type of task.
-                        <br><br>
-                        I plan to make this an ongoing project of mine and have already implemented some features such as user 
-                        login/logout, account registration, like/unlike buttons and counter, profile pages, password change, 
-                        and recipe edit/delete (if it is your recipe). I have plans for many more features and hope to keep 
-                        updating and bettering this project of mine so others may potentially find it useful as well.
-                        <br><br>
-                        The code can be found using the GitHub icon on the main page or by clicking 
-                        <a href="https://github.com/Bateeters/react-fullstack" target="_blank">
-                          <b><i>here.</i></b>
-                        </a>
-                      </p>
-                    </div>
-
-                    <div class="modal-footer justify-content-center">
-                      <button type="button" class="btn btn-outline-light col-5" data-mdb-dismiss="modal" style="font-size: 1em;">Close</button>
-                    </div>
-                </div>
-              </div>
-          </div>
-        </div> 
-
-        <!-- Project: Zodiac Finder -->
-        <div class="container my-5">
-          <div class="row projectLayout justify-content-center align-items-center project pb-5">
-            <div class="col-lg-4 col-md-10">
-              <div class="pb-3 sectionHeadB text-center text-md-start">
-                <h3 class="sectionHeadB text-center text-md-start">Zodiac Finder</h3>
-              </div>
-              <div class="p-3 mb-3" style="background-color: #070012;">
-                A class group project built utilizing python to generate a star chart and additional information based on user input.
-              </div>
-              <div class="row justify-content-center align-items-center pt-4">
-
-                <div class="col-lg-8 col-md-6 col-12 align-items-center pb-4">
-                  <!-- vv GITHUB LINK FOR PROJECT HERE vv -->
-                   <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2"  data-mdb-ripple-color="light">
-                      <a href="https://github.com/Bateeters/SDEV265Group5Project/tree/main" target="_blank">GitHub Repo</a>
-                    </button>
-                   </div>
-                </div>
-                <div class="col-lg-5 col-md-6 col-12 align-items-center pb-4">
-                  <!-- Button trigger modal -->
-                  <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2" data-mdb-toggle="modal" data-mdb-target="#zodiacModal" data-mdb-ripple-color="light">
-                      Details
-                    </button>
-                  </div>
-                </div>
-
-              </div>
-              <div class="py-3 text-center">
-                Knowledge Used: Python, APIs,<br>
-                Various Python Libraries <br>
-                (list can be found in requirements.txt GitHub file)
-              </div>
-            </div>
-            <div class="col-lg-7 col-md-10 mb-4 px-0" id="zodiacImg">
-              <img id="mobileImg"class="col-12"src="./img/zodiac.jpg" alt="">
-            </div>
-          </div>
-
-          <!-- Modal -->
-          <div class="modal fade" id="zodiacModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content" style="background-color: #070012;">
-                    <div class="modal-header">
-                      <h4 class="modal-title" id="ModalLabel">Zodiac Finder</h4>
-                      <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close" style="color: white;"><h2>X</h2></button>
-                    </div>
-
-                    <div class="modal-body">
-                      <p style="font-size: 1em;">
-                        This group project was assigned to introduce us to the responsibilities and tasks associated with project management. 
-                        We were tasked to create a project of our choosing, utilizing any language we wanted. As a team, we decided to use python
-                        to build an application to help locate constellations in the night sky utilizing the skyfield library.
-                        <br><br>
-                        While the majority of the project was focused on the documentation, 
-                        deadline, and communication aspects of development, I still feel this is a great project to help 
-                        showcase some skills and knowledge of the python language.
-                        <br><br>
-                        A document to help set up and use this project is also 
-                        included in the GitHub files as well (<i>Zodiac_Finder_Use_Instructions.docx</i>).
-                        <br><br>
-                        The code can be found using the GitHub icon on the main page or by clicking 
-                        <a href="https://github.com/Bateeters/SDEV265Group5Project/tree/main" target="_blank">
-                          <b><i>here.</i></b>
-                        </a>
-                      </p>
-                    </div>
-
-                    <div class="modal-footer justify-content-center">
-                      <button type="button" class="btn btn-outline-light col-5" data-mdb-dismiss="modal" style="font-size: 1em;">Close</button>
-                    </div>
-                </div>
-              </div>
-          </div>
-        </div>
-
-        <!-- Project: Alien Invasion Game -->        
-        <div class="container my-5">
-          <div class="row projectLayout justify-content-center align-items-center project pb-5">
-            <div class="col-lg-4 col-md-10">
-              <div class="pb-3 sectionHeadB text-center text-md-start">
-                <h3 class="sectionHeadB text-center text-md-start">Alien Invasion Game</h3>
-              </div>
-              <div class="p-3 mb-3" style="background-color: #070012;">
-                A personal project utilizing Python and the Pygame library mimicking the basic gameplay of the classic "Space Invaders" retro game.
-              </div>
-              <div class="row justify-content-center align-items-center pt-4">
-
-                <div class="col-lg-8 col-md-6 col-12 align-items-center pb-4">
-                  <!-- vv GITHUB LINK FOR PROJECT HERE vv -->
-                   <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2"  data-mdb-ripple-color="light">
-                      <a href="https://github.com/Bateeters/Alien_invasion" target="_blank">GitHub Repo</a>
-                    </button>
-                   </div>
-                </div>
-                <div class="col-lg-5 col-md-6 col-12 align-items-center pb-4">
-                  <!-- Button trigger modal -->
-                  <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2" data-mdb-toggle="modal" data-mdb-target="#alienInvasionModal" data-mdb-ripple-color="light">
-                      Details
-                    </button>
-                  </div>
-                </div>
-
-              </div>
-              <div class="py-3 text-center">
-                Knowledge Used: Python, Pygame
-              </div>
-            </div>
-            <div class="col-lg-7 col-md-10 mb-4 px-0" id="AlienInvasionImg">
-              <img id="mobileImg"class="col-12"src="./img/Alien_Invasion.png">
-            </div>
-          </div>
-
-          <!-- Modal --> 
-          <div class="modal fade" id="alienInvasionModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content" style="background-color: #070012;">
-                    <div class="modal-header">
-                      <h4 class="modal-title" id="ModalLabel">Alien Invasion Game</h4>
-                      <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close" style="color: white;"><h2>X</h2></button>
-                    </div>
-
-                    <div class="modal-body">
-                      <p style="font-size: 1em;">
-                        I enjoyed working through this project as I have always played video games. Finally deciding to 
-                        experiment with a new library that I have never utilized (Pygame) and create my own was a challenge 
-                        that I was excited to undertake and I found myself wanting to keep work on this and adding features.
-                        The player ship is controlled using the left and right keyboard arrows and the spacebar is to shoot. 
-                        To play, simply download the files from GitHub and run the "alien_invasion.py" file.
-                        <br><br>
-                        The code can be found using the GitHub icon on the main page or by clicking 
-                        <a href="https://github.com/Bateeters/Alien_invasion" target="_blank">
-                          <b><i>here.</i></b>
-                        </a>
-                      </p>
-                    </div>
-
-                    <div class="modal-footer justify-content-center">
-                      <button type="button" class="btn btn-outline-light col-5" data-mdb-dismiss="modal" style="font-size: 1em;">Close</button>
-                    </div>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Design Section -->
-      <div class="container pt-5" id="design">
-        <h1 class="justify-content-center pt-5 pb-5 sectionHead">Design Work</h1>
-        <div id="designProjectList" class="row justify-content-center">
-
-          <!-- EZAdsPro -->        
-          <div class="col-lg-5 col-md-10 designProjectItem p-3 m-5">
-              <div>
-                  <div>
-                      <div class="pb-3">
-                          <h3 class="sectionHeadB text-center text-md-start">EZAdsPro</h3>
-                      </div>
-                      <div class="p-3 mb-3" style="background-color: #070012;">
-                          My experience at EZAdsPro included working very closely with both team members and clients. This 
-                          included designing advertisements for both web and print, communicating with both clients and the
-                          in-house team, as well as finalizing print materials for production purposes.
-                      </div>
-                      <div>
-                          <!-- Button trigger modal -->
-                          <div class="d-flex justify-content-center">
-                              <button type="button" 
-                              class="btn btn-outline-light buttonText py-2 my-2" 
-                              data-mdb-toggle="modal" 
-                              data-mdb-target="#ezadsModal" 
-                              data-mdb-ripple-color="light">
-                              See Work
-                              </button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <!-- Our Sunday Visitor -->        
-          <div class="col-lg-5 col-md-10 designProjectItem p-3 m-5">
-              <div>
-                  <div>
-                      <div class="pb-3">
-                          <h3 class="sectionHeadB text-center text-md-start">Our Sunday Visitor</h3>
-                      </div>
-                      <div class="p-3 mb-3" style="background-color: #070012;">
-                          During my time at Our Sunday Visitor, Inc. I worked very closely 
-                          with the marketing team. This included various jobs such as designing 
-                          business to business promotional sales pieces, pamphlets and ads 
-                          for books, third-party ads and more for both print and digital channels.                    
-                      </div>
-                      <div>
-                          <!-- Button trigger modal -->
-                          <div class="d-flex justify-content-center">
-                              <button type="button" 
-                              class="btn btn-outline-light buttonText py-2 my-2" 
-                              data-mdb-toggle="modal" 
-                              data-mdb-target="#osvModal" 
-                              data-mdb-ripple-color="light">
-                              See Work
-                              </button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <!-- Elemental Supplements -->        
-          <div class="col-lg-5 col-md-10 designProjectItem p-3 m-5">
-              <div>
-                  <div>
-                      <div class="pb-3">
-                          <h3 class="sectionHeadB text-center text-md-start">Elemental Supplements</h3>
-                      </div>
-                      <div class="p-3 mb-3" style="background-color: #070012;">
-                          Being healthy can be achieved in many ways but most of them revolve around the idea of nutrition. 
-                          When looking into this, it is shown that eating whole foods and staying away from heavily processed 
-                          items is most beneficial. It seems that every product available on the market doesn't reflect this idea.
-                          The concept of Elemental Real Food Supplements is to bridge that gap and to get as close to natural 
-                          whole foods as you possibly can with supplements.
-                      </div>
-                      <div>
-                          <!-- Button trigger modal -->
-                          <div class="d-flex justify-content-center">
-                              <button type="button" 
-                              class="btn btn-outline-light buttonText py-2 my-2" 
-                              data-mdb-toggle="modal" 
-                              data-mdb-target="#elementalModal" 
-                              data-mdb-ripple-color="light">
-                              See Work
-                              </button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <!-- YumYum Boards -->        
-          <div class="col-lg-5 col-md-10 designProjectItem p-3 m-5">
-              <div>
-                  <div>
-                      <div class="pb-3">
-                          <h3 class="sectionHeadB text-center text-md-start">YumYum Boards</h3>
-                      </div>
-                      <div class="p-3 mb-3" style="background-color: #070012;">
-                          Skateboards have always had a draw to me. After attempting, and failing, to learn 
-                          to ride them I gave up but just couldn't get rid of them. I realized that the designs 
-                          each had were specific and reflective of the idividual who rode it. I enjoyed looking 
-                          through each and realized that board art could be a great outlet for my illustrative, 
-                          less refined and polished side of design. YumYum Boards is a collection of some of those 
-                          designs as well as a branding project.                   
-                      </div>
-                      <div>
-                          <!-- Button trigger modal -->
-                          <div class="d-flex justify-content-center">
-                              <button type="button" 
-                              class="btn btn-outline-light buttonText py-2 my-2" 
-                              data-mdb-toggle="modal" 
-                              data-mdb-target="#yumyumModal" 
-                              data-mdb-ripple-color="light">
-                              See Work
-                              </button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-            
-        </div>
-        
-        <!-- EZAdsPro Modal --> 
-        <div class="modal fade" id="ezadsModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content" style="background-color: #070012;">
-                    <div class="modal-header">
-                    <h4 class="modal-title" id="ModalLabel">EZAdsPro Work Examples</h4>
-                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close" style="color: white;"><h2>X</h2></button>
-                    </div>
-
-                    <div class="modal-body">
-                        <p style="font-size: 1em;">
-                            <h4>Click Images to Enlarge</h4>
-                            <br>
-                            First-Party Service Promotion:
-                            <a href="img/EZAds/Flyer_1.pdf" target="_blank">
-                                <img class="col-12" src="img/EZAds/Flyer_1.jpg">
-                            </a>
-                            <br><br><br>
-                            Third-Party Real Estate Advertisements:
-                            <a href="img/EZAds/Custom_3.pdf" target="_blank">
-                                <img class="col-12" src="img/EZAds/Custom_3.jpg">
-                            </a>
-                            <br><br><br>
-                            <a href="img/EZAds/Cover_1.pdf" target="_blank">
-                                <img class="col-12"src="img/EZAds/Cover_1.jpg">
-                            </a>
-                            <br><br><br>
-                            <a href="img/EZAds/Custom_DPS1.pdf" target="_blank">
-                                <img class="col-12"src="img/EZAds/Custom_DPS1.jpg">
-                            </a>
-                            <br><br><br>
-                            Third-Party Service Advertisement:
-                            <a href="img/EZAds/Custom_2.pdf" target="_blank">
-                                <img class="col-12" src="img/EZAds/Custom_2.jpg">
-                            </a>
-                            <br><br><br>
-                            Example of Books Paginated<br>(Mix of Created & Client Supplied Ads) - Click for Link:
-                            <a href="https://issuu.com/realestatebookkc/docs/32707.24.4ebook" target="_blank">
-                                <img class="col-12" src="img/EZAds/Pagination.jpg">
-                            </a>
-                        </p>
-                    </div>
-
-                    <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-outline-light col-5" data-mdb-dismiss="modal" style="font-size: 1em;">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- OSV Modal --> 
-        <div class="modal fade" id="osvModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content" style="background-color: #070012;">
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="ModalLabel">Our Sunday Visitor Work Examples</h4>
-                        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close" style="color: white;"><h2>X</h2></button>
-                    </div>
-
-                    <div class="modal-body">
-                        <p style="font-size: 1em;">
-                            <h4>Click Images to Enlarge</h4>
-                            <br>
-                            Flyer for Multi-Media Packages:
-                            <a href="img/OSV/OSVNewsweekly_Ad_Flyer_2.jpg" target="_blank">
-                                <img class="col-12" src="img/OSV/OSVNewsweekly_Ad_Flyer_2.jpg">
-                            </a>
-                            <br><br><br>
-                            Third-Party Advertisement:
-                            <a href="img/OSV/OSV_ad1.jpg" target="_blank">
-                                <img class="col-12" src="img/OSV/OSV_ad1.jpg">
-                            </a>
-                            <br><br><br>
-                            First-Party Product Advertisements:
-                            <a href="img/OSV/OSV_Promo1.jpg" target="_blank">
-                                <img class="col-12"src="img/OSV/OSV_Promo1.jpg">
-                            </a>
-                            <br><br><br>
-                            <a href="img/OSV/OSV_Mailers.jpg" target="_blank">
-                                <img class="col-12" src="img/OSV/OSV_Mailers.jpg">
-                            </a>
-                        </p>
-                    </div>
-
-                    <div class="modal-footer justify-content-center">
-                        <button type="button" class="btn btn-outline-light col-5" data-mdb-dismiss="modal" style="font-size: 1em;">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Elemental Modal --> 
-        <div class="modal fade" id="elementalModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content" style="background-color: #070012;">
-                    <div class="modal-header">
-                    <h4 class="modal-title" id="ModalLabel">Elemental Supplements<br>Work Examples</h4>
-                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close" style="color: white;"><h2>X</h2></button>
-                    </div>
-
-                    <div class="modal-body">
-                        <p style="font-size: 1em;">
-                            <h4>Click Images to Enlarge</h4>
-                            <br>
-                            Logo Lock-Ups:
-                            <a href="img/elemental/ElementalLogoBlack.png" target="_blank">
-                                <img class="col-12" src="img/elemental/ElementalLogo4.png">
-                            </a>
-                            <br><br><br><br>
-                            <a href="img/elemental/ElementalHorizLogoBlack.png" target="_blank">
-                                <img class="col-12" src="img/elemental/ElementalHorizLogo3.png">
-                            </a>
-                            <br><br><br><br>
-                            <a href="img/elemental/ElementalLogoMarkBlack.png" target="_blank">
-                                <img class="col-12" src="img/elemental/ElementalLogoMark.png">
-                            </a>
-                            <br><br><br><br>
-                            Website Design:
-                            <img class="col-12" src="img/elemental/elementalWebMockup.jpg">
-                            <br><br>
-                            <a href="https://xd.adobe.com/view/2d8da4fe-cefa-467b-8d0f-9239d61b6b62-78de/?fullscreen&hints=off" target="_blank"
-                            style="display: flex; justify-content: space-evenly;">
-                                <button type="button" class="btn btn-outline-light buttonText py-2 my-2 justify-content-center">
-                                    Desktop & Tablet Website
-                                </button>
-                            </a>
-                            <br><br><br>
-                            Supplement Packaging:
-                            <a href="img/elemental/elementalPackaging.pdf" target="_blank">
-                                <img class="col-12"src="img/elemental/ElementalProducts3.jpg">
-                            </a>
-                            <br><br><br>
-                            Apparel:
-                            <a href="img/elemental/ShirtsDesign1.png" target="_blank">
-                                <img class="col-12"src="img/elemental/ShirtsDesign1.png">
-                            </a>
-                            <br><br><br>
-                            <a href="img/elemental/ShirtsDesign2.png" target="_blank">
-                                <img class="col-12"src="img/elemental/ShirtsDesign2.png">
-                            </a>
-                        </p>
-                    </div>
-
-                    <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-outline-light col-5" data-mdb-dismiss="modal" style="font-size: 1em;">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- YumYum Modal --> 
-        <div class="modal fade" id="yumyumModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content" style="background-color: #070012;">
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="ModalLabel">YumYum Boards Work Examples</h4>
-                        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close" style="color: white;"><h2>X</h2></button>
-                    </div>
-
-                    <div class="modal-body">
-                        <p style="font-size: 1em;">
-                            <h4>Click Images to Enlarge</h4>
-                            <br>
-                            Logo Lock-Ups:
-                            <a href="img/yumyum/yumyumLogo.png" target="_blank">
-                                <img class="col-12" src="img/yumyum/yumyumLogo.png">
-                            </a>
-                            <br><br><br>
-                            <a href="img/yumyum/yumyumSignature.png" target="_blank">
-                                <img class="col-12" src="img/yumyum/yumyumSignature.png">
-                            </a>
-                            <a href="img/yumyum/YumYumDonut.png" target="_blank">
-                                <img class="col-12" src="img/yumyum/YumYumDonut.png">
-                            </a>
-                            <br><br><br>
-                            Website Design:
-                            <img class="col-12" src="img/yumyum/WebDevicesMockup.png">
-                            <br><br>
-                            <a href="https://xd.adobe.com/view/9a383e66-672f-4abc-89b9-e56c06d2984d-cf6b/?fullscreen&hints=off" target="_blank"
-                            style="display: flex; justify-content: space-evenly;">
-                                <button type="button" class="btn btn-outline-light buttonText py-2 my-2 justify-content-center">
-                                    Desktop & Tablet Website
-                                </button>
-                            </a>
-                            <br><br><br>
-                            Board Designs:
-                            <a href="img/yumyum/BoardDesigns.pdf" target="_blank">
-                                <img class="col-12"src="img/yumyum/BoardsMockUp.png">
-                            </a>
-                        </p>
-                    </div>
-
-                    <div class="modal-footer justify-content-center">
-                        <button type="button" class="btn btn-outline-light col-5" data-mdb-dismiss="modal" style="font-size: 1em;">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </div>
-
-      <!-- Experience Section -->
-      <div id="about" class="container pt-5 ps-3 pe-3">
-        <h1 class="row justify-content-center pt-5 pb-5 ps-4 pe-4 sectionHead">A Little About Myself</h1>
-      </div>
-
-      <!-- Experience Accordion -->
-      <div class="container col-md-10 col-lg-7">
-        <div class="accordion" id="expAccordion">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                Ivy Tech
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#expAccordion">
-              <div class="accordion-body">
-                <h5>Oct. 2023</h5>
-                <p>Associate's of Applied Science in Software Development</p>
-                <ul>
-                  <li>Development courses covering a range of languages including Python, JavaScript, C#, and more</li>
-                  <li>Courses covering best practices for UX/UI and database management/creation</li>
-                  <li>Worked with teams via group projects, utilizing GitHub to share and collaborate</li>
-                  <li>Basic knowledge of AWS architecture and offered products/uses</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                EZAdsPro
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-mdb-parent="#expAccordion">
-              <div class="accordion-body">
-                <h5>Dec. 2017 - Mar. 2023</h5>
-                <p>Senior Graphic Designer</p>
-                <ul>
-                  <li>Created stand out advertisements for individual clients and franchised magazines across the US and Canada</li>
-                  <li>Maintained brandings and updated ads to resemble changing markets and availabilities</li>
-                  <li>Worked within timelines and specified guidelines to get books to press in a timely and correct manner</li>
-                  <li>Converted designed ads from print to digital or vice versa to provide the maximum exposure for clients</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Our Sunday Visitor
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-mdb-parent="#expAccordion">
-              <div class="accordion-body">
-                <h5>May 2017 - Nov. 2017</h5>
-                <p>Graphic Designer (Temp. Position)</p>
-                <ul>
-                  <li>Designed ads, pamphlets, newsletters, and more print and digital materials (some of which are still in use)</li>
-                  <li>Worked with both in-house and third party clients to produce ads and marketing materials that met requested needs</li>
-                  <li>Worked within deadlines and guidlines simultaneously to get designs created and approved in a timely manner</li>
-                  <li>Balanced time between projects as changes came back or new tasks were assigned by Senior Lead</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                Ball State University
-              </button>
-            </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-mdb-parent="#expAccordion">
-              <div class="accordion-body">
-                <h5>May 2017</h5>
-                <p>BFA in Visual Communication</p>
-                <ul>
-                  <li>Graphic design courses focusing on logo and branding as well as conceptual design</li>
-                  <li>Took all web design courses available to gain the most exposure possible to HTML, CSS, and JavaScript</li>
-                  <li>Fine Art courses such as drawing, painting, glass-blowing/neon, multi-media and photography</li>
-                </ul>
-                <p>Minor in Marketing</p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFive">
-              <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-                Our Sunday Visitor
-              </button>
-            </h2>
-            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-mdb-parent="#expAccordion">
-              <div class="accordion-body">
-                <h5>May 2016 - Aug. 2016</h5>
-                <p>Design Department Intern</p>
-                <ul>
-                  <li>Responsible for digital restoration and archival of +35 years of artwork</li>
-                  <li>Used Adobe programs to color correct, crop and enhance both hand made and digital art</li>
-                  <li>Worked within deadlines to properly lable, sort, and store artwork based on both contents and copyrights</li>
-                  <li>Reduced file sizes without quality loss to help streamline process for both usage and storing purposes</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Mobile Bio Section -->
-      <div class="mt-5 container col-md-12 justify-content-center pb-5" id="bioPhoto">
-        <div class="row justify-content-center">
-          <div class="card col-10 bg-transparent">
-            <div class="bg-image">
-              <div id="personalPhoto" class="img-fluid rounded-6">
-              </div> 
-            </div>
-          </div>
-        </div>
-
-        <!-- Button trigger modal -->
-        <div class="row justify-content-center">
-          <button type="button" class="btn btn-outline-light col-7 buttonText" data-mdb-toggle="modal" data-mdb-target="#BioModal">
-            Read More About Me
-          </button>
-        </div>
-            
-        <!-- Modal -->
-        <div class="modal fade" id="BioModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content" style="background-color: #070012;">
-                  <div class="modal-header">
-                    <h4 class="modal-title" id="ModalLabel">I Am Brian Teeters</h4>
-                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close" style="color: white;"><h2>X</h2></button>
-                  </div>
-
-                  <div class="modal-body">
-                    <p style="font-size: 1em;">
-                        Growing up art had a significant influence on my life.
-                        I found that I could get lost for hours experimenting with colors, patterns, and 
-                        shapes and pairing them together in unexpected ways. Through this, my 
-                        career path as a graphic designer started.
-                        <br><br>
-                        After having been in the field for a number of years, I began to want something
-                        involving more of a challenge. I wanted to engage both sides of my brain, logical and creative.
-                        During college I had some classes dealing with web design and coding and enjoyed those thoroughly.
-                        Realizing this I decided to persue a degree in software development to expand my skill set.
-                        Keeping a creative outlet has always been important to me and the career shift allows me to
-                        add the challenge and logical engagement I have been looking for.
-                        <br><br>
-                        As a developer, designer, and artist I always enjoy being able to insert a part 
-                        of my personality into each project. My goal is to open the door for an interaction 
-                        with the user. I create with the purpose of impacting the lives of those around me with my 
-                        work as well as meeting the needs of the end-user, and client alike through clear and 
-                        well thought out design.
-                    </p>
-                  </div>
-
-                  <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-outline-light col-5" data-mdb-dismiss="modal" style="font-size: 1em;">Close</button>
-                  </div>
-              </div>
-            </div>
-        </div>
-      </div>
-
-      <!-- Tablet & Desktop Bio Section -->
-      <div id="largeBio">
-        <div class="container mt-5 pt-3">
-          <div class="row justify-content-center">
-            <div class="col-md-6 col-lg-6 p-3" style="background-color: #070012;">
-              <h4 class="sectionHeadB mb-3 ps-lg-3">I Am Brian Teeters</h4>
-              <p class="pe-md-2 ps-lg-3 pe-lg-3">
-                Growing up art had a significant influence on my life.
-                I found that I could get lost for hours experimenting with colors, patterns, and 
-                shapes. I found joy pairing them together in unexpected ways. Through this, my 
-                career path as a graphic designer started.
-                <br><br>
-                After having been in the field for a number of years, I began to want something
-                involving more of a challenge. I wanted to engage both sides of my brain, logical and creative.
-                During college I had some classes dealing with web design and coding and enjoyed those thoroughly.
-                Realizing this I decided to pursue a degree in software development to expand my skill set.
-                Keeping a creative outlet has always been important to me and the career shift allows me to
-                add the challenge and logical engagement I have been looking for.
-                <br><br>
-                As a developer, designer, and artist I always enjoy being able to insert a part 
-                of my personality into each project. My goal is to open the door for an interaction 
-                with the user. I create with the purpose of impacting the lives of those around me with my 
-                work as well as meeting the needs of the end-user, and client alike through clear and 
-                well thought out design.
-            </p>
-            </div>
-            <div id="largeBioPic" class="col-md-5 col-lg-3"></div>
           </div>
         </div>
       </div>
-
-      <!-- Contact Section -->
-      <div id="contact" class="container pt-5">
-        <h1 class="row justify-content-center sectionHead pt-5 pb-5 ps-4 pe-4">Want to Get in Touch?</h1>
-        <!-- 
-        <div class="row justify-content-center">
-          <p class="col-9 col-lg-8 text-center" id="boldText">
-            <b>I am looking for new opportunities!</b>
-          </p>
-        </div> -->
-
-        <div class="row justify-content-center">
-          <p class="col-10 col-lg-8 text-center">
-            I would be happy to have a conversation about anything you're 
-            needing and establish if it is a right fit.
-            <br><br>
-            If you have questions, 
-            a potential opportunity, or even just want to have a friendly chat, 
-            please don't hesitate to reach out and I'll respond as soon as I can.
-            <br><br>
-            You can reach me at BrianTeetersDesign@gmail.com<br>or by using the button below.
-        </p>
-        </div>
-
-        <div class="row justify-content-center">
-          <button class="btn btn-outline-light col-md-3 col-5 mt-3 mb-5">
-            <a class="buttonText" href="mailto:brianteetersdesign@gmail.com" target="_blank">Contact Me</a>
-          </button>
-        </div>
-
-      </div>
-
-  </main>
-
-  <footer id="footer" class="p-4">
-      <a href="https://github.com/bateeters" target="_blank">Designed & Built by Brian Teeters</a>
-  </footer>
-
-    <!-- MDB -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-    <!-- Custom scripts -->
-    <script type="text/javascript" src="js/custom.js"></script>
-
-  </body>
+    </div>
+  </div>
+  <script type="module" src="./js/projects-tabs.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
 </html>

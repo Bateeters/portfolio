@@ -1,0 +1,149 @@
+:root {
+    --custom-gold: rgb(245, 183, 95);
+    --custom-dark-purple: rgb(16, 2, 29);
+}
+
+body {
+    background-color: black;
+    text-wrap: pretty;
+    background-image:url("../assets/images/ui/BackgroundDust.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.min-height-100 {
+    min-height: 100vh;
+}
+
+strong {
+    color: var(--custom-gold);
+}
+
+.project-image {
+    object-fit:cover;
+}
+
+.project-nav {
+    border-right: 2px solid indigo;
+    padding-right: 10px;
+}
+
+.project-nav .nav-link {
+    border: 2px solid var(--custom-gold);
+    color: white;
+}
+
+.project-nav .nav-link:hover,
+.project-nav .nav-link.active {
+    border: 2px solid var(--custom-gold);
+    background-color: var(--custom-gold);
+    color: indigo;
+}
+
+.project-bullets {
+    padding-left: 16px;
+}
+
+.github-img {
+    filter: invert(1);
+}
+
+.github-activity-link {
+    text-decoration: none;
+}
+
+.github-activity-link span {
+    transition: all 0.3s ease-in-out;
+}
+
+
+.github-activity-link:hover span {
+    color: var(--custom-gold);
+    transition: all 0.3s ease-in-out;
+}
+
+.resume-link-text {
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.btn {
+    border-radius: 20px;
+}
+
+.btn-primary {
+    background-color: var(--custom-dark-purple);
+    border: 2px solid var(--custom-gold);
+    transition: all 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+        transition: all 0.3s ease-in-out;
+        background-color:var(--custom-gold);
+        border: 2px solid var(--custom-gold);
+        color: indigo;
+        font-weight: 600;
+        box-shadow: none;
+    }
+}
+
+.contact-link {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+        color: var(--custom-gold);
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.accordion-item {
+    border: 1px solid var(--custom-gold);
+    background-color: var(--custom-dark-purple);
+}
+
+
+
+.accordion-button {
+    &:not(.collapsed),
+    &.collapsed:hover{
+    background-color: var(--custom-gold) !important;
+    color: indigo;
+
+        &::after {
+            filter:brightness(0.60) hue-rotate(45deg);
+        }
+    }
+
+    &.collapsed {
+        background-color: indigo !important;
+        color: white;
+
+        &::after{
+            filter: invert(1);
+        }
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+
+}
+
+@media (max-width:1199px) {
+    .sticky-nav-lg {
+        position: sticky;
+        background-color: var(--custom-dark-purple);
+        padding-top: 10px;
+        top: 0px;
+    }
+
+    .project-nav {
+        border-right: none;
+        border-bottom: 2px solid indigo;
+        padding-right:0;
+        padding-bottom: 10px;
+    }
+}
