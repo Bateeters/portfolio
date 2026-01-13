@@ -26,7 +26,7 @@ function renderProject(projectId) {
             <div class="col-xl-5 col-12">
                 <div class="row justify-content-between h-100">
                     <div class="col-xl-12 col-5">
-                        <ul>
+                        <ul class="project-bullets">
                             ${project.tech.map(t => `<li class="pb-1">${t}</li>`).join("")}
                         </ul>
                     </div>

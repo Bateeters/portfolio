@@ -7,7 +7,6 @@ body {
     background-color: black;
     text-wrap: pretty;
     background-image:url("../assets/images/ui/BackgroundDust.png");
-    background-image: url("../img/OrangePalms.png") !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -40,6 +39,10 @@ strong {
     border: 2px solid var(--custom-gold);
     background-color: var(--custom-gold);
     color: indigo;
+}
+
+.project-bullets {
+    padding-left: 16px;
 }
 
 .github-img {
@@ -133,7 +136,7 @@ strong {
     .sticky-nav-lg {
         position: sticky;
         background-color: var(--custom-dark-purple);
-        padding-top: 20px;
+        padding-top: 10px;
         top: 0px;
     }
 
