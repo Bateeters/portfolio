@@ -7,9 +7,10 @@ body {
     background-color:var(--custom-dark-purple);
     text-wrap: pretty;
     background-image: url("../assets/images/ui/BackgroundDust.png") !important;
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .min-height-100 {
