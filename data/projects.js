@@ -1,13 +1,13 @@
 export const projects = [
     {
         id: "1",
-        title: "React Shop",
-        description: "A full-featured React e-commerce demo featuring component-based architecture and state management utilizing Context and useReducer. Integrated FakeStore API for dynamic product data and implemented responsive routing with React Router to deliver a fully responsive, production-ready single-page application.",
-        tech: ["ReactJS", "JavaScript", "CSS Modules", "HTML", "FakeStore API"],
-        image: "./assets/images/projects/reactShop.jpg",
+        title: "Food Chain Rumble (WIP)",
+        description: "A complete MERN stack competitive gaming website with stat tracking, leaderboard ranking system, community forums with nested comments and voting, and comprehensive user dashboard. JWT authentication, rate limiting, and optimized database queries for scalable performance. CI/CD pipeline on Render with MongoDB Atlas integration.",
+        tech: ["React", "Redux", "Node.js", "Express", "MongoDB", "Mongoose", "JWT", "Helmet", "RESTful API", "Render"],
+        image: "./assets/images/projects/FoodChainRumbleWebsite.png",
         links: {
-            "Demo": "https://brianteetersreactshop.pages.dev/",
-            "GitHub Repo": "https://github.com/Bateeters/BrianTeetersReactShop"
+            "Live Site": "https://foodchainrumble.onrender.com",
+            "GitHub Repo": "https://github.com/Bateeters/food-chain-rumble"
         }
     },
     {
@@ -25,6 +25,18 @@ export const projects = [
     },
     {
         id: "3",
+        title: "React Shop",
+        description: "A full-featured React e-commerce demo featuring component-based architecture and state management utilizing Context and useReducer. Integrated FakeStore API for dynamic product data and implemented responsive routing with React Router to deliver a fully responsive, production-ready single-page application.",
+        tech: ["ReactJS", "JavaScript", "CSS Modules", "HTML", "FakeStore API"],
+        image: "./assets/images/projects/reactShop.jpg",
+        links: {
+            "Demo": "https://brianteetersreactshop.pages.dev/",
+            "GitHub Repo": "https://github.com/Bateeters/BrianTeetersReactShop"
+        }
+    },
+    /*
+    {
+        id: "3",
         title: "CV / Resume Builder",
         description: "Created a modular React-based resume builder with real-time state management and interactive component previews. Designed for clean, responsive layouts and seamless user experience, with modern tooling and version control integration.",
         tech: ["ReactJS", "CSS", "JavaScript", "HTML", "Bootstrap", "Component-Based Design"],
@@ -34,6 +46,7 @@ export const projects = [
             "GitHub Repo": "https://github.com/Bateeters/CVResumeBuilder"
         }
     },
+    */
     {
         id: "4",
         title: "Tough Mudder Redesign",
