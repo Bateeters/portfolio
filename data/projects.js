@@ -2,7 +2,7 @@ export const projects = [
     {
         id: "1",
         title: "Food Chain Rumble (WIP)",
-        description: "A complete MERN stack competitive gaming website with stat tracking, leaderboard ranking system, community forums with nested comments and voting, and comprehensive user dashboard. JWT authentication, rate limiting, and optimized database queries for scalable performance. CI/CD pipeline on Render with MongoDB Atlas integration.",
+        description: "A MERN stack competitive game website. Includes stat tracking, leaderboards, community forums, and user dashboard. JWT authentication, rate limiting, and optimized database queries for scalable performance. CI/CD pipeline on Render with MongoDB Atlas integration.",
         tech: ["React", "Redux", "Node.js", "Express", "MongoDB", "Mongoose", "JWT", "Helmet", "RESTful API", "Render"],
         image: "./assets/images/projects/FoodChainRumbleWebsite.png",
         links: {

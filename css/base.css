@@ -22,12 +22,12 @@ strong {
 }
 
 .project-image {
-    object-fit:cover;
+    object-fit: cover;
 }
 
 .project-nav {
-    border-right: 2px solid indigo;
-    padding-right: 10px;
+    border-bottom: 2px solid indigo;
+    padding-bottom: 20px;
 }
 
 .project-nav .nav-link {
