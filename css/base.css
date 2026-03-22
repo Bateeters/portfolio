@@ -26,9 +26,14 @@ strong {
     object-fit: cover;
 }
 
+li::marker {
+    color: var(--custom-gold);
+}
+
 .project-nav {
     border-bottom: 2px solid indigo;
     padding-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .project-nav .nav-link {

@@ -2,15 +2,23 @@ export const projects = [
     {
         id: "1",
         title: "CMS Search Component",
-        description: "Designed and developed a configurable search component within a custom CMS, enabling dynamic filtering and improved content discoverability across client websites. Translated UX requirements into reusable UI logic, enhancing usability and scalability for multiple implementations.",
+        description: "Built a configurable CMS search component to improve content discovery across client websites.",
+        highlights: [
+            "Improved usability with dynamic filtering",
+            "Reusable across multiple client sites"
+        ],
         tech: ["JavaScript", "HTML", "CSS", "CMS Development", "UI Components", "UX/UI"],
         image: "./assets/images/projects/searchComponent.jpg",
         links: {}
     },
     {
         id: "2",
-        title: "Template System (Destination & Supplier Pages)",
-        description: "Redesigned and developed modern, reusable CMS templates to replace outdated legacy designs, improving visual quality and reducing time-to-launch for client websites. Created scalable page structures that allowed users to quickly customize branded experiences, contributing to increased client satisfaction and retention.",
+        title: "Template System (Generic, Destination, & Supplier Pages)",
+        description: "Created modern, reusable CMS templates to replace outdated designs and speed up site creation.",
+        highlights: [
+            "Reduced time to launch new sites",
+            "Improved visual quality and user experience"
+        ],
         tech: ["HTML", "CSS", "JavaScript", "Bootstrap", "CMS Theming", "UX/UI Design"],
         image: "./assets/images/projects/VPsites.jpg",
         links: {
@@ -23,7 +31,11 @@ export const projects = [
     {
         id: "3",
         title: "CMS Migration Initiative (V3 → V4)",
-        description: "Executed large-scale migration of legacy client websites from Version 3 to Version 4 of a CMS platform, enabling deprecation of outdated systems and supporting future feature development. Ensured content integrity, resolved compatibility issues, and collaborated across teams to streamline the transition process.",
+        description: "Migrated client sites from a legacy CMS to a modern platform to support future development.",
+        highlights: [
+            "Reduced technical debt",
+            "Ensured smooth transitions across sites"
+        ],
         tech: ["CMS", "JavaScript", "HTML", "CSS", "System Migration", "QA Testing"],
         image: "",
         links: {}
@@ -31,7 +43,11 @@ export const projects = [
     {
         id: "4",
         title: "Custom Timeline Component",
-        description: "Developed a reusable visual layout component inspired by a custom client design, enabling structured content grouping through stacked, timeline-style sections. Adapted a one-off design into a scalable CMS element for broader use across multiple websites.",
+        description: "Built a reusable content layout component based on a custom client design.",
+        highlights: [
+            "Created a one-off design that turned into a shared feature",
+            "Improved content structure and presentation"
+        ],
         tech: ["HTML", "CSS", "JavaScript", "Component Design", "CMS"],
         image: "./assets/images/projects/timeline.jpg",
         links: {
@@ -41,7 +57,11 @@ export const projects = [
     {
         id: "5",
         title: "Food Chain Rumble (WIP)",
-        description: "Developing a full-stack MERN application featuring user authentication, leaderboards, match tracking, and community forums. Implemented Redux Toolkit for state management, designed RESTful APIs, and structured MongoDB schemas for scalable data handling. Deployed via CI/CD pipeline using Render and MongoDB Atlas.",
+        description: "Building a full-stack MERN app with authentication, leaderboards, and community features.",
+        highlights: [
+            "Implemented state management and REST APIs",
+            "Designed scalable database structure for user and match data"
+        ],
         tech: ["React", "Redux", "Node.js", "Express", "MongoDB", "Mongoose", "JWT", "REST API", "Render"],
         image: "./assets/images/projects/FCRMockup.jpg",
         links: {

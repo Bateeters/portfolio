@@ -34,6 +34,11 @@ function renderProject(projectId) {
             <div class="${descriptionColumnClass}">
                 <h3>${project.title}</h3>
                 <p>${project.description}</p>
+                ${project.highlights ? `
+                    <ul>
+                        ${project.highlights.map(h => `<li class="project-bullet">${h}</li>`).join("")}
+                    </ul>
+                ` : ""}
             </div>
             <div class="col-xl-5 col-md-3 col-12 p-3">
                 <div class="row justify-content-between h-100">
