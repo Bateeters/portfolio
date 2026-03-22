@@ -1,20 +1,17 @@
 export const projects = [
     {
         id: "1",
-        title: "Food Chain Rumble (WIP)",
-        description: "A MERN stack competitive game website. Includes stat tracking, leaderboards, community forums, and user dashboard. JWT authentication, rate limiting, and optimized database queries for scalable performance. CI/CD pipeline on Render with MongoDB Atlas integration.",
-        tech: ["React", "Redux", "Node.js", "Express", "MongoDB", "Mongoose", "JWT", "Helmet", "RESTful API", "Render"],
-        image: "./assets/images/projects/FoodChainRumbleWebsite.png",
-        links: {
-            "Live Site": "https://foodchainrumble.onrender.com",
-            "GitHub Repo": "https://github.com/Bateeters/food-chain-rumble"
-        }
+        title: "CMS Search Component",
+        description: "Designed and developed a configurable search component within a custom CMS, enabling dynamic filtering and improved content discoverability across client websites. Translated UX requirements into reusable UI logic, enhancing usability and scalability for multiple implementations.",
+        tech: ["JavaScript", "HTML", "CSS", "CMS Development", "UI Components", "UX/UI"],
+        image: "./assets/images/projects/searchComponent.jpg",
+        links: {}
     },
     {
         id: "2",
-        title: "Destination and Supplier Sites",
-        description: "Developed responsive, production-ready websites for travel partners, optimizing layouts, content delivery, and usability. Collaborated with design and marketing teams to implement custom CMS themes, improving partner engagement and user retention.",
-        tech: ["HTML", "CSS", "JavaScript", "Bootstrap", "CMS Theming"],
+        title: "Template System (Destination & Supplier Pages)",
+        description: "Redesigned and developed modern, reusable CMS templates to replace outdated legacy designs, improving visual quality and reducing time-to-launch for client websites. Created scalable page structures that allowed users to quickly customize branded experiences, contributing to increased client satisfaction and retention.",
+        tech: ["HTML", "CSS", "JavaScript", "Bootstrap", "CMS Theming", "UX/UI Design"],
         image: "./assets/images/projects/VPsites.jpg",
         links: {
             "Dominica": "https://atlasandaura.vacationport.net/Info/Destination/DominicaHome",
@@ -25,38 +22,56 @@ export const projects = [
     },
     {
         id: "3",
+        title: "CMS Migration Initiative (V3 → V4)",
+        description: "Executed large-scale migration of legacy client websites from Version 3 to Version 4 of a CMS platform, enabling deprecation of outdated systems and supporting future feature development. Ensured content integrity, resolved compatibility issues, and collaborated across teams to streamline the transition process.",
+        tech: ["CMS", "JavaScript", "HTML", "CSS", "System Migration", "QA Testing"],
+        image: "",
+        links: {}
+    },
+    {
+        id: "4",
+        title: "Custom Timeline Component",
+        description: "Developed a reusable visual layout component inspired by a custom client design, enabling structured content grouping through stacked, timeline-style sections. Adapted a one-off design into a scalable CMS element for broader use across multiple websites.",
+        tech: ["HTML", "CSS", "JavaScript", "Component Design", "CMS"],
+        image: "./assets/images/projects/timeline.jpg",
+        links: {
+            "Dominica Example": "https://atlasandaura.vacationport.net/Info/Destination/DominicaHome"
+        }
+    },
+    {
+        id: "5",
+        title: "Food Chain Rumble (WIP)",
+        description: "Developing a full-stack MERN application featuring user authentication, leaderboards, match tracking, and community forums. Implemented Redux Toolkit for state management, designed RESTful APIs, and structured MongoDB schemas for scalable data handling. Deployed via CI/CD pipeline using Render and MongoDB Atlas.",
+        tech: ["React", "Redux", "Node.js", "Express", "MongoDB", "Mongoose", "JWT", "REST API", "Render"],
+        image: "./assets/images/projects/FCRMockup.jpg",
+        links: {
+            "Live Site": "https://foodchainrumble.onrender.com",
+            "GitHub Repo": "https://github.com/Bateeters/food-chain-rumble"
+        }
+    },
+    /*
+    {
+        id: "6",
         title: "React Shop",
-        description: "A full-featured React e-commerce demo featuring component-based architecture and state management utilizing Context and useReducer. Integrated FakeStore API for dynamic product data and implemented responsive routing with React Router to deliver a fully responsive, production-ready single-page application.",
-        tech: ["ReactJS", "JavaScript", "CSS Modules", "HTML", "FakeStore API"],
+        description: "Built a responsive e-commerce application using React with Context API and useReducer for state management. Integrated external APIs for dynamic product data and implemented client-side routing to simulate a modern single-page shopping experience.",
+        tech: ["React", "JavaScript", "CSS Modules", "HTML", "REST API"],
         image: "./assets/images/projects/reactShop.jpg",
         links: {
             "Demo": "https://brianteetersreactshop.pages.dev/",
             "GitHub Repo": "https://github.com/Bateeters/BrianTeetersReactShop"
         }
     },
-    /*
     {
-        id: "3",
-        title: "CV / Resume Builder",
-        description: "Created a modular React-based resume builder with real-time state management and interactive component previews. Designed for clean, responsive layouts and seamless user experience, with modern tooling and version control integration.",
-        tech: ["ReactJS", "CSS", "JavaScript", "HTML", "Bootstrap", "Component-Based Design"],
-        image: "./assets/images/projects/ResumeBuilder.jpg",
-        links: {
-            "Demo": "https://cvresumebuilder.pages.dev/",
-            "GitHub Repo": "https://github.com/Bateeters/CVResumeBuilder"
-        }
-    },
-    */
-    {
-        id: "4",
+        id: "7",
         title: "Tough Mudder Redesign",
-        description: "Implemented a responsive homepage redesign by creating and translating Adobe XD wireframes into clean, maintainable front-end code. Prioritized navigation clarity, content hierarchy, and brand consistency to improve usability across devices while preserving Tough Mudder’s visual identity.",
-        tech: ["HTML", "CSS", "Adobe XD"],
+        description: "Translated Adobe XD wireframes into a responsive front-end implementation, focusing on navigation clarity, content hierarchy, and brand consistency. Delivered a clean, user-friendly redesign aligned with modern UX standards.",
+        tech: ["HTML", "CSS", "Adobe XD", "Responsive Design"],
         image: "./assets/images/projects/ToughMudderMockup.jpg",
         links: {
             "Demo": "https://bateeters.github.io/ToughMudderRedesign/",
             "XD Prototype": "https://xd.adobe.com/view/4eff75d1-a463-4755-a436-6658b4309afb-1bac/?fullscreen",
             "GitHub Repo": "https://github.com/Bateeters/ToughMudderRedesign"
         }
-    },
+    }
+    */
 ];
