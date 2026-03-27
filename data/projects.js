@@ -31,7 +31,7 @@ export const projects = [
     {
         id: "3",
         title: "CMS Migration Initiative (V3 → V4)",
-        description: "Migrated client sites from a legacy CMS to a modern platform to support future development.",
+        description: "Migrated 250-300+ client sites from a legacy CMS to a modern platform to support future development.",
         highlights: [
             "Reduced technical debt",
             "Ensured smooth transitions across sites"
