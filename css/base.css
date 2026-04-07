@@ -679,6 +679,123 @@ html {
     transform: translateY(-2px);
 }
 
+.experience-section__title {
+    font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+}
+
+.experience-section__rule {
+    height: 1px;
+    background: linear-gradient(90deg, rgba(245, 183, 95, 0.7), rgba(245, 183, 95, 0.08));
+}
+
+.experience-list {
+    display: grid;
+    gap: 2.75rem;
+}
+
+.experience-entry {
+    display: grid;
+    grid-template-columns: 12rem 1fr;
+    gap: 2rem;
+    animation: heroReveal 0.8s ease forwards;
+    opacity: 0;
+    transform: translateY(24px);
+}
+
+.experience-entry__period-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.experience-entry__period {
+    color: rgba(255, 255, 255, 0.62);
+    font-size: 0.82rem;
+    letter-spacing: 0.14rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.experience-entry__timeline {
+    width: 1px;
+    flex: 1 1 auto;
+    background: linear-gradient(180deg, rgba(245, 183, 95, 0.35), rgba(245, 183, 95, 0.03));
+    min-height: 100%;
+}
+
+.experience-entry__content {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.experience-entry__header {
+    margin-bottom: 1rem;
+}
+
+.experience-entry__role {
+    margin-bottom: 0.35rem;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.experience-entry:hover .experience-entry__role {
+    color: var(--custom-gold);
+}
+
+.experience-entry__company-link,
+.experience-entry__company-text {
+    color: rgba(245, 183, 95, 0.92);
+    text-decoration: none;
+}
+
+.experience-entry__company-link:hover,
+.experience-entry__company-link:focus {
+    text-decoration: underline;
+}
+
+.experience-entry__description {
+    color: rgba(255, 255, 255, 0.76);
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+}
+
+.experience-entry__achievements {
+    display: grid;
+    gap: 0.8rem;
+    padding: 0;
+    margin: 0 0 1rem;
+    list-style: none;
+}
+
+.experience-entry__achievements li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.experience-entry__bullet {
+    color: var(--custom-gold);
+    line-height: 1.2;
+    margin-top: 0.05rem;
+}
+
+.experience-resume {
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.experience-resume__text {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.experience-resume__link {
+    min-width: 13rem;
+}
+
 @keyframes heroReveal {
     to {
         opacity: 1;
@@ -892,5 +1009,18 @@ li::marker {
     .skills-card.is-muted {
         opacity: 1;
         transform: none;
+    }
+
+    .experience-entry {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .experience-entry__timeline {
+        display: none;
+    }
+
+    .experience-entry__content {
+        padding-bottom: 1.5rem;
     }
 }
