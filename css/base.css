@@ -796,6 +796,83 @@ html {
     min-width: 13rem;
 }
 
+.contact-section {
+    position: relative;
+}
+
+.contact-panel {
+    padding: clamp(2rem, 5vw, 4rem);
+    border: 1px solid rgba(245, 183, 95, 0.16);
+    border-radius: 1.5rem;
+    background:
+        radial-gradient(circle at top, rgba(245, 183, 95, 0.08), transparent 48%),
+        rgba(255, 255, 255, 0.03);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+}
+
+.contact-section__eyebrow {
+    color: var(--custom-gold);
+    font-size: 0.8rem;
+    letter-spacing: 0.24rem;
+    text-transform: uppercase;
+}
+
+.contact-section__title {
+    font-size: clamp(2.4rem, 6vw, 4.25rem);
+    line-height: 1.05;
+}
+
+.contact-section__copy {
+    max-width: 38rem;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+.contact-section__cta,
+.contact-section__secondary {
+    min-width: 13rem;
+}
+
+.contact-section__cta {
+    box-shadow: 0 16px 30px rgba(245, 183, 95, 0.12);
+}
+
+.contact-section__secondary {
+    border-width: 2px;
+}
+
+.contact-section__footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contact-section__footer-label {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.82rem;
+    letter-spacing: 0.14rem;
+    text-transform: uppercase;
+}
+
+.contact-section__email {
+    color: white;
+    text-decoration: none;
+    font-size: clamp(1rem, 2.1vw, 1.3rem);
+    transition: color 0.3s ease;
+}
+
+.contact-section__email:hover,
+.contact-section__email:focus {
+    color: var(--custom-gold);
+}
+
+.footer-section {
+    border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.footer-section__text {
+    color: rgba(255, 255, 255, 0.58);
+}
+
 @keyframes heroReveal {
     to {
         opacity: 1;
@@ -1022,5 +1099,10 @@ li::marker {
 
     .experience-entry__content {
         padding-bottom: 1.5rem;
+    }
+
+    .contact-section__cta,
+    .contact-section__secondary {
+        width: 100%;
     }
 }
