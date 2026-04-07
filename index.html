@@ -5,207 +5,149 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Brian Teeters Portfolio</title>
 
-  <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-  <!-- Stylesheets -->
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/layout.css">
   <link rel="stylesheet" href="./css/cards.css">
-
 </head>
 <body>
+  <nav class="section-nav section-nav--desktop d-none d-lg-flex flex-column gap-4" aria-label="Desktop section navigation">
+    <a href="#about" class="section-nav__link is-active">
+      <span class="section-nav__line"></span>
+      <span class="section-nav__label">About</span>
+    </a>
+    <a href="#projects" class="section-nav__link">
+      <span class="section-nav__line"></span>
+      <span class="section-nav__label">Projects</span>
+    </a>
+    <a href="#contact" class="section-nav__link">
+      <span class="section-nav__line"></span>
+      <span class="section-nav__label">Contact</span>
+    </a>
+  </nav>
+
+  <nav class="navbar navbar-expand d-lg-none fixed-top mobile-section-nav" aria-label="Mobile section navigation">
+    <div class="container-fluid px-3 py-3">
+      <span class="mobile-section-nav__brand">BT</span>
+      <div class="navbar-nav ms-auto flex-row gap-1">
+        <a class="nav-link mobile-section-nav__link active" href="#about">About</a>
+        <a class="nav-link mobile-section-nav__link" href="#projects">Projects</a>
+        <a class="nav-link mobile-section-nav__link" href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="about" class="about-hero position-relative overflow-hidden">
+    <div class="about-hero__glow about-hero__glow--primary"></div>
+    <div class="about-hero__glow about-hero__glow--secondary"></div>
+    <div class="about-hero__grid"></div>
+
+    <div class="container position-relative about-hero__content">
+      <div class="row justify-content-center text-center">
+        <div class="col-xl-8 col-lg-10">
+          <p class="about-hero__eyebrow mb-4">Front-End Developer</p>
+          <h1 class="about-hero__title mb-4">Brian Teeters</h1>
+          <p class="about-hero__lead mx-auto mb-3">
+            I build <strong>accessible, pixel-perfect</strong> digital experiences for the web.
+            With 2+ years of experience and a design background, I focus on creating clean,
+            intuitive interfaces that actually make sense for users.
+          </p>
+          <p class="about-hero__body mx-auto mb-5">
+            Currently specializing in React with full-stack JavaScript capabilities. I use AI as a
+            tool to move faster, not as a shortcut. I build, test, and refine until I fully
+            understand what I ship.
+          </p>
+
+          <div class="d-flex flex-wrap justify-content-center gap-3 mb-5 about-hero__actions">
+            <a href="#projects" class="btn btn-primary px-4 py-2">View Projects</a>
+            <a href="#contact" class="btn btn-outline-light px-4 py-2">Get in Touch</a>
+          </div>
+
+          <div class="d-flex flex-wrap justify-content-center gap-3 gap-md-4 about-hero__links">
+            <a href="https://github.com/Bateeters" target="_blank" rel="noopener noreferrer" class="about-hero__link">
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/brian-teeters-a23122134/" target="_blank" rel="noopener noreferrer" class="about-hero__link">
+              LinkedIn
+            </a>
+            <a href="./assets/resume/Brian Teeters Web Resume.pdf" target="_blank" rel="noopener noreferrer" class="about-hero__link">
+              Resume
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-hero__scroll text-center">
+        <a href="#projects" class="about-hero__scroll-link">
+          <span>Scroll</span>
+          <span class="about-hero__scroll-arrow">&darr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <div class="container">
     <div class="row min-vh-100 d-flex align-items-center justify-content-center">
       <div class="col-lg-10 col-11 my-lg-5 mb-5">
         <div class="row mt-5">
           <div class="col-xl-9 col-lg-12">
             <div class="row h-100">
-              <!-- Projects Card Start -->
-              <div class="card col-12 p-3 mb-2">
-                <div class="row justify-content-center h-100">
-                  <div class="col-12 d-flex pb-lg-3 sticky-nav-lg">
-                    <div class="nav nav-pills project-nav justify-content-between w-100" role="tablist">
-                      <h3 class="col-md-6 col-12">Case Studies and Projects:</h3>
-                      <button class="nav-link active" data-project="1" type="button">1</button>
-                      <button class="nav-link" data-project="2" type="button">2</button>
-                      <button class="nav-link" data-project="3" type="button">3</button>
-                      <button class="nav-link" data-project="4" type="button">4</button>
-                      <button class="nav-link" data-project="5" type="button">5</button>
-                      <p class="col-12 pt-4 m-0">A selection of product features, CMS systems, and full-stack applications I’ve designed and developed.</p>
-                    </div>
+              <div id="projects" class="card col-12 p-4 mb-2">
+                <section class="projects-showcase">
+                  <div class="d-flex align-items-center gap-3 flex-wrap mb-4">
+                    <h2 class="projects-showcase__title mb-0">Selected Work</h2>
+                    <div class="projects-showcase__rule flex-grow-1"></div>
                   </div>
-                  <div class="col-lg-12">
-                    <div id="project-content" class="project-content row h-100">
-                      <!-- JS Renders content here -->
-                    </div>
+                  <p class="projects-showcase__intro mb-4">
+                    A selection of product features, CMS systems, and full-stack applications I've designed and developed.
+                  </p>
+                  <div id="projects-list" class="projects-list">
+                    <!-- JS renders project cards here -->
                   </div>
-                </div>
-              </div>
-              <!-- Projects Card End -->
-              <!-- Profile Card Start -->
-              <div class="card col-12 p-3 mt-2">
-                <span class="pb-3">
-                  Hey, I’m <strong>Brian Teeters</strong>, a <strong>Front End Developer</strong> with 
-                  2+ years of experience building modern web applications. I work primarily with React 
-                  and a full stack foundation that lets me take features <strong>from idea to 
-                  deployment</strong>.
-                  <br/> <br/>
-                  With a background in design, I focus on creating <strong>clean, intuitive interfaces</strong> 
-                  that actually make sense for users. I have experience working on CMS platforms, building 
-                  reusable components, and modernizing outdated systems to improve both <strong>usability 
-                  and scalability</strong>.
-                  <br/> <br/>
-                  I use AI as a tool to move faster, not as a shortcut. I build, test, and refine until I fully understand what I ship.
-                </span>
-                <div class="row pt-4 justify-content-md-start justify-content-center">
-                  <div class="col-md-3 col-8 mt-md-0 mt-3">
-                    <a href="https://github.com/Bateeters" class="btn btn-primary w-100" target="_blank">GitHub Profile</a>
-                  </div>
-                  <div class="col-md-3 col-8 mt-md-0 mt-3">
-                    <a href="https://www.linkedin.com/in/brian-teeters-a23122134/" class="btn btn-primary w-100" target="_blank">LinkedIn</a>
-                  </div>
-                  <div class="col-md-3 col-8 ms-md-auto mt-md-0 mt-3">
-                    <a href="mailto:BrianTeetersDesign@gmail.com" class="btn btn-primary w-100">Contact Me</a>
-                  </div>
-                </div>
-              </div>
-              <!-- Profile Card End -->
-            </div>
-          </div>
-
-          <!-- Skills Card Start -->
-          <div class="col-xl-3 col-lg-12 p-0 ps-xl-3 my-xl-0 my-3">
-            <div class="card p-3 h-100">
-              <h3>Skills</h3>
-              <span><strong>Primary Focus:</strong></span>
-              <!-- <span class="pb-3">HTML • CSS • JavaScript • React • Bootstrap • Responsive UI • Git</span> -->
-                <span class="pb-4">Frontend developer specializing in React with full-stack JavaScript capabilities and a design background.</span>
-              <div class="accordion" id="skillsAccordion">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Front-End
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#skillsAccordion">
-                    <div class="accordion-body">
-                      <ul class="px-3">
-                        <li>HTML5 / CSS3 / JS (ES6+)</li>
-                        <li>React</li>
-                        <li>Redux Toolkit</li>
-                        <li>Bootstrap</li>
-                        <li>Responsive and Accessible Design</li>
-                        <li>Cross-Browser Optimization</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Back-End / APIs
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#skillsAccordion">
-                    <div class="accordion-body">
-                      <ul class="px-3">
-                        <li>Node.js</li>
-                        <li>Express.js</li>
-                        <li>MongoDB</li>
-                        <li>Mongoose</li>
-                        <li>RESTful APIs</li>
-                        <li>JWT Authentication</li>
-                        <li>MySQL / SQL</li>
-                        <li>Exposure to .NET Core, C#, Python, Django</li>
-                      </ul>                    
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Design and UX / UI
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#skillsAccordion">
-                    <div class="accordion-body">
-                      <ul class="px-3">
-                        <li>Wireframing and Prototyping</li>
-                        <li>Adobe Creative Cloud</li>
-                        <li>UI Layout Systems</li>
-                        <li>Branding and Marketing Alignment</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                      Tools & Practices
-                    </button>
-                  </h2>
-                  <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#skillsAccordion">
-                    <div class="accordion-body">
-                      <ul class="px-3">
-                        <li>Git and GitHub</li>
-                        <li>Agile / Scrum</li>
-                        <li>VS Code / Visual Studio</li>
-                        <li>Jira, Asana</li>
-                        <li>Salesforce</li>
-                        <li>CI / CD (Render)</li>
-                        <li>AI-Assisted Development</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Skills Card End -->
-        </div>
-        <div class="row mt-xl-3 mb-xl-5">
-          <div class="col-xl-4 col-lg-12 p-0 pe-xl-3 pe-lg-0">
-            <div class="card p-3 h-100">
-              <h3>UI Work</h3>
-              <span class="mt-2">
-                My background in graphic design strengthens how I approach front-end development. 
-                When structuring layouts and translating wireframes into code, I make UI decisions 
-                that emphasize clarity, usability, and consistency across devices.
-              </span>
-            </div>
-          </div>
-          <div class="col-xl-8 col-lg-12 p-0 my-xl-0 my-3">
-            <!-- Dev Activity Card Start -->
-            <a href="https://github.com/Bateeters?tab=repositories" target="_blank" class="github-activity-link">
-              <div class="card p-3">
-                <img class="github-img"
-                  src="https://ghchart.rshah.org/Bateeters"
-                  alt="GitHub contribution activity"
-                />
-                <div class="row">
-                  <span class="pt-3 github-link-text">Check and see what I'm currently working on.</span>
-                </div>
-              </div>
-            </a>
-            <!-- Dev Activity Card End -->
-
-            <div class="row">
-              <div class="col-lg-3 col-md-4">
-                <div class="row h-100">
-                  <div class="col-12 mt-3">
-                    <a class="resume-link-text btn btn-primary d-flex justify-content-center align-items-center h-100" href="./assets/resume/Brian Teeters Web Resume.pdf" target="_blank">
-                      <span>Click to View Resume</span>
+                  <div class="text-center mt-5">
+                    <a href="https://github.com/Bateeters" target="_blank" rel="noopener noreferrer" class="projects-showcase__more-link">
+                      View More on GitHub
                     </a>
                   </div>
-                </div>
+                </section>
               </div>
-              <div class="col-lg-9 col-md-8 mt-3">
-                <div class="card px-4 py-2 h-100 justify-content-center">
-                  <div class="d-flex justify-content-md-between justify-content-center flex-wrap flex-md-nowrap">
-                    <a class="p-2 px-md-2 px-5 contact-link" href="mailto:BrianTeetersDesign@gmail.com">BrianTeetersDesign@gmail.com</a>
-                    <a class="p-2 px-md-2 px-4 contact-link" href="https://github.com/Bateeters" target="_blank">GitHub</a>
-                    <a class="p-2 px-md-2 px-4 contact-link" href="https://www.linkedin.com/in/brian-teeters-a23122134/" target="_blank">LinkedIn</a>
+
+              <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="project-modal-title" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                  <div class="modal-content project-modal">
+                    <div class="modal-header project-modal__header">
+                      <div>
+                        <span id="project-modal-featured" class="project-modal__eyebrow d-none">Featured Project</span>
+                        <h2 id="project-modal-title" class="modal-title"></h2>
+                      </div>
+                      <button type="button" class="btn-close btn-close-white project-modal__close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-4 p-lg-5">
+                      <div class="row g-4">
+                        <div class="col-lg-7">
+                          <img id="project-modal-image" class="project-modal__image d-none" alt="">
+                          <div>
+                            <h3 class="project-modal__section-title">Overview</h3>
+                            <p id="project-modal-overview" class="project-modal__copy mb-0"></p>
+                          </div>
+                        </div>
+                        <div class="col-lg-5">
+                          <div class="project-modal__panel mb-4">
+                            <h3 class="project-modal__section-title">Highlights</h3>
+                            <ul id="project-modal-highlights" class="project-modal__list mb-0"></ul>
+                          </div>
+                          <div class="project-modal__panel">
+                            <h3 class="project-modal__section-title">Technologies Used</h3>
+                            <div id="project-modal-tech" class="project-tags"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer project-modal__footer justify-content-between">
+                      <p class="project-modal__hint mb-0">Press ESC or use the close button to exit.</p>
+                      <div id="project-modal-links" class="d-flex flex-wrap gap-2 justify-content-end"></div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -215,6 +157,7 @@
       </div>
     </div>
   </div>
+
   <script type="module" src="./js/projects-tabs.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
