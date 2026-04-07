@@ -17,6 +17,10 @@ html {
     scroll-behavior: smooth;
 }
 
+section[id] {
+    scroll-margin-top: 5.5rem;
+}
+
 .section-nav {
     position: fixed;
     left: 2rem;
