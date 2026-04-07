@@ -492,6 +492,193 @@ html {
     white-space: nowrap;
 }
 
+.skills-section {
+    position: relative;
+}
+
+.skills-section__title {
+    font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+}
+
+.skills-section__rule {
+    height: 1px;
+    background: linear-gradient(90deg, rgba(245, 183, 95, 0.7), rgba(245, 183, 95, 0.08));
+}
+
+.skills-section__intro {
+    max-width: 42rem;
+    color: rgba(255, 255, 255, 0.78);
+    line-height: 1.8;
+}
+
+.skills-card {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    transition: transform 0.35s ease, opacity 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+    animation: heroReveal 0.8s ease forwards;
+    opacity: 0;
+    transform: translateY(24px);
+}
+
+.skills-card:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
+
+.skills-card.is-muted {
+    opacity: 0.58;
+    transform: scale(0.98);
+}
+
+.skills-card__wash {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+.skills-card:hover .skills-card__wash {
+    opacity: 1;
+}
+
+.skills-card__inner {
+    position: relative;
+    z-index: 1;
+    padding: 1.5rem;
+}
+
+.skills-card__title {
+    margin-bottom: 0.3rem;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.skills-card:hover .skills-card__title {
+    color: var(--custom-gold);
+}
+
+.skills-card__subtitle {
+    color: rgba(255, 255, 255, 0.58);
+    font-size: 0.78rem;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+}
+
+.skills-card__badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3rem;
+    padding: 0.45rem 0.75rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 0.72rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.skills-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+}
+
+.skills-card__tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.4rem 0.65rem;
+    border-radius: 0.55rem;
+    background: rgba(255, 255, 255, 0.07);
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 0.75rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skills-card:hover .skills-card__tag {
+    background: rgba(16, 2, 29, 0.72);
+    color: white;
+}
+
+.skills-card--gold {
+    border-color: rgba(245, 183, 95, 0.18);
+}
+
+.skills-card--gold .skills-card__wash {
+    background: linear-gradient(180deg, rgba(245, 183, 95, 0.12), rgba(245, 183, 95, 0.03));
+}
+
+.skills-card--violet {
+    border-color: rgba(120, 92, 255, 0.18);
+}
+
+.skills-card--violet .skills-card__wash {
+    background: linear-gradient(180deg, rgba(120, 92, 255, 0.12), rgba(120, 92, 255, 0.03));
+}
+
+.skills-card--teal {
+    border-color: rgba(69, 202, 191, 0.18);
+}
+
+.skills-card--teal .skills-card__wash {
+    background: linear-gradient(180deg, rgba(69, 202, 191, 0.12), rgba(69, 202, 191, 0.03));
+}
+
+.skills-card--rose {
+    border-color: rgba(233, 120, 155, 0.18);
+}
+
+.skills-card--rose .skills-card__wash {
+    background: linear-gradient(180deg, rgba(233, 120, 155, 0.12), rgba(233, 120, 155, 0.03));
+}
+
+.skills-exploring {
+    padding: 1.5rem;
+    border: 1px dashed rgba(245, 183, 95, 0.3);
+    border-radius: 1rem;
+    background: rgba(245, 183, 95, 0.05);
+}
+
+.skills-exploring__spark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 999px;
+    background: rgba(245, 183, 95, 0.12);
+    color: var(--custom-gold);
+    font-weight: 700;
+}
+
+.skills-exploring__title {
+    color: var(--custom-gold);
+    font-size: 0.8rem;
+    letter-spacing: 0.18rem;
+    text-transform: uppercase;
+}
+
+.skills-exploring__tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 0.9rem;
+    border-radius: 999px;
+    border: 1px solid rgba(245, 183, 95, 0.28);
+    background: rgba(245, 183, 95, 0.08);
+    color: var(--custom-gold);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.skills-exploring__tag:hover {
+    background: rgba(245, 183, 95, 0.14);
+    transform: translateY(-2px);
+}
+
 @keyframes heroReveal {
     to {
         opacity: 1;
@@ -700,5 +887,10 @@ li::marker {
 
     .project-card__cta-wrap {
         width: 100%;
+    }
+
+    .skills-card.is-muted {
+        opacity: 1;
+        transform: none;
     }
 }
