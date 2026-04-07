@@ -35,15 +35,28 @@
     </a>
   </nav>
 
-  <nav class="navbar navbar-expand d-lg-none fixed-top mobile-section-nav" aria-label="Mobile section navigation">
+  <nav class="navbar d-lg-none fixed-top mobile-section-nav" aria-label="Mobile section navigation">
     <div class="container-fluid px-3 py-3">
       <span class="mobile-section-nav__brand">BT</span>
-      <div class="navbar-nav ms-auto flex-row gap-1">
-        <a class="nav-link mobile-section-nav__link active" href="#about">About</a>
-        <a class="nav-link mobile-section-nav__link" href="#projects">Projects</a>
-        <a class="nav-link mobile-section-nav__link" href="#skills">Skills</a>
-        <a class="nav-link mobile-section-nav__link" href="#experience">Experience</a>
-        <a class="nav-link mobile-section-nav__link" href="#contact">Contact</a>
+      <button
+        class="navbar-toggler mobile-section-nav__toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mobileSectionNavMenu"
+        aria-controls="mobileSectionNavMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse mobile-section-nav__menu mt-3" id="mobileSectionNavMenu">
+        <div class="navbar-nav ms-auto gap-1 text-end">
+          <a class="nav-link mobile-section-nav__link active" href="#about">About</a>
+          <a class="nav-link mobile-section-nav__link" href="#projects">Projects</a>
+          <a class="nav-link mobile-section-nav__link" href="#skills">Skills</a>
+          <a class="nav-link mobile-section-nav__link" href="#experience">Experience</a>
+          <a class="nav-link mobile-section-nav__link" href="#contact">Contact</a>
+        </div>
       </div>
     </div>
   </nav>

@@ -2,6 +2,7 @@ const navLinks = Array.from(document.querySelectorAll('.section-nav__link, .mobi
 const sections = navLinks
     .map((link) => document.querySelector(link.getAttribute('href')))
     .filter(Boolean);
+const mobileMenuEl = document.getElementById('mobileSectionNavMenu');
 
 function setActiveLink(sectionId) {
     navLinks.forEach((link) => {
@@ -40,3 +41,14 @@ function updateActiveNav() {
 updateActiveNav();
 window.addEventListener('scroll', updateActiveNav, { passive: true });
 window.addEventListener('resize', updateActiveNav);
+
+if (mobileMenuEl) {
+    const mobileCollapse = new bootstrap.Collapse(mobileMenuEl, { toggle: false });
+    document.querySelectorAll('.mobile-section-nav__link').forEach((link) => {
+        link.addEventListener('click', () => {
+            if (mobileMenuEl.classList.contains('show')) {
+                mobileCollapse.hide();
+            }
+        });
+    });
+}
