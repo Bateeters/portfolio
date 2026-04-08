@@ -516,6 +516,18 @@ section[id] {
     color: white;
 }
 
+.project-challenge-panel {
+    background: linear-gradient(180deg, rgba(237, 103, 145, 0.12), rgba(231, 114, 151, 0.03)) !important;
+}
+
+.project-solution-panel {
+    background: linear-gradient(180deg, rgba(69, 202, 191, 0.12), rgba(69, 202, 191, 0.03)) !important;
+}
+
+.project-impact-panel {
+    background: linear-gradient(180deg, rgba(245, 183, 95, 0.12), rgba(245, 183, 95, 0.03)) !important;
+}
+
 .project-modal-header,
 .project-modal-footer {
     border-color: rgba(245, 183, 95, 0.16);
@@ -562,7 +574,7 @@ section[id] {
     margin: 0;
 }
 
-.project-modal-list li + li {
+.modal-body li + li {
     margin-top: 0.65rem;
 }
 
@@ -1080,7 +1092,7 @@ li::marker {
 }
 
 .btn-primary {
-    background-color: var(--custom-navy);
+    background-color: transparent;
     border: 2px solid var(--custom-gold);
     transition: all 0.3s ease-in-out;
 
@@ -1090,7 +1102,6 @@ li::marker {
         background-color:var(--custom-gold);
         border: 2px solid var(--custom-gold);
         color: var(--custom-navy);
-        font-weight: 600;
         box-shadow: none;
     }
 }

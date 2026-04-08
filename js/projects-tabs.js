@@ -6,6 +6,9 @@ const modalEl = document.getElementById("projectModal");
 const modalTitleEl = document.getElementById("project-modal-title");
 const modalFeaturedEl = document.getElementById("project-modal-featured");
 const modalImageEl = document.getElementById("project-modal-image");
+const modalChallengeEl = document.getElementById("project-modal-challenge");
+const modalSolutionEl = document.getElementById("project-modal-solution");
+const modalImpactEl = document.getElementById("project-modal-impact");
 const modalOverviewEl = document.getElementById("project-modal-overview");
 const modalHighlightsEl = document.getElementById("project-modal-highlights");
 const modalTechEl = document.getElementById("project-modal-tech");
@@ -117,6 +120,9 @@ function populateModal(projectId) {
 
     modalTitleEl.textContent = project.title;
     modalOverviewEl.textContent = getProjectSummary(project);
+    modalChallengeEl.textContent = project.challenge || "Project challenge details available on request.";
+    modalSolutionEl.textContent = project.solution || "Project solution details available on request.";
+    modalImpactEl.textContent = project.impact || "Project impact details available on request.";
 
     if (project.featured) {
         modalFeaturedEl.classList.remove("d-none");
@@ -133,6 +139,12 @@ function populateModal(projectId) {
         modalImageEl.alt = "";
         modalImageEl.classList.add("d-none");
     }
+
+    modalImpactEl.innerHTML = (project.impact || []).length
+        ? project.impact
+            .map((item) => `<li>${escapeHtml(item)}</li>`)
+            .join("")
+        : "<li>Additional project impact details available on request.</li>";
 
     modalHighlightsEl.innerHTML = (project.highlights || []).length
         ? project.highlights
@@ -157,7 +169,7 @@ function populateModal(projectId) {
                 ${escapeHtml(link.label)}
             </a>
         `).join("")
-        : `<span class="project-modal-hint">Links available upon request.</span>`;
+        : ``;
 }
 
 function bindProjectInteractions() {
