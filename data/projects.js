@@ -60,13 +60,28 @@ export const projects = [
     {
         id: "3",
         title: "CMS Migration Initiative (V3 → V4)",
-        description: "Migrated 250-300+ client sites from a legacy CMS to a modern platform to support future development.",
+        description: "Led the migration of 300+ client websites from a legacy CMS version to a modern platform, reducing technical debt and improving performance, consistency, and maintainability.",
+        overview: "Executed a large-scale migration initiative to transition legacy client websites from Version 3 to Version 4 of a CMS platform. The effort focused on reducing technical debt, improving performance, and consolidating development efforts into a single modern system. Managed site updates, custom rebuilds, and client communication throughout the process.",
         highlights: [
-            "Reduced technical debt",
-            "Ensured smooth transitions across sites"
+            "Migrated 300+ client websites from V3 → V4",
+            "Reduced technical debt by eliminating support for legacy systems",
+            "Recreated custom site features and styling to match existing designs",
+            "Improved internal workflows for handling and pricing custom requests",
+            "Contributed to platform standardization and long-term maintainability",
+            "Collaborated with clients to review, adjust, and finalize updated sites",
+            "Helped transition the platform to single-version development",
         ],
-        tech: ["CMS", "JavaScript", "HTML", "CSS", "System Migration", "QA Testing"],
+        tech: ["CMS Development", "JavaScript", "HTML", "CSS", "Responsive Design", "DOM Manipulation", "Technical Debt Reduction", "Platform Migration", "Client-Facing Support / Communication"],
         image: "",
+        challenge: "The platform was supporting multiple CMS versions, creating significant technical debt and slowing down development. Teams were required to maintain and build features across separate codebases, reducing efficiency and increasing complexity. Additionally, clients on older versions were not receiving the best product experience.",
+        solution: "Executed a structured migration process to transition all remaining V3 websites to V4. Updated site configurations, matched designs using modern themes, and rebuilt custom elements where needed to preserve functionality and branding. Coordinated client communication and handled post-migration adjustments to ensure a smooth transition.",
+        impact: [
+            "Eliminated support for a legacy platform, significantly reducing technical debt",
+            "Enabled the team to focus on a single codebase, improving development speed and QA quality",
+            "Improved site performance, consistency, and user experience across migrated sites",
+            "Streamlined internal processes for custom work requests and client communication",
+            "Helped fully sunset Version 3, allowing the team to move forward with modern development"
+        ],
         links: {}
     },
     {

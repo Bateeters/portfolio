@@ -10,6 +10,22 @@
     --custom-green: #D4F5A3;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--custom-gold);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--custom-peach);
+}
+
 body {
     position: relative;
     background-color:var(--custom-navy);
@@ -950,7 +966,8 @@ section[id] {
 }
 
 .footer-section {
-    border-color: rgba(255, 255, 255, 0.08) !important;
+    background-color: rgba(16, 2, 29, 0.78);
+    border-color: rgba(245, 183, 95, 0.18) !important;
 }
 
 .footer-section-text {

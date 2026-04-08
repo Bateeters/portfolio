@@ -29,7 +29,7 @@ function renderSkillCards() {
     }
 
     gridEl.innerHTML = skillCategories.map((category, index) => `
-        <div class="col-6">
+        <div class="col-md-6">
             <article
                 class="skills-card skills-card--${escapeHtml(category.tone)}"
                 data-skills-card
