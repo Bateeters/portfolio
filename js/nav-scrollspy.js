@@ -1,4 +1,4 @@
-const navLinks = Array.from(document.querySelectorAll('.section-nav__link, .mobile-section-nav__link'));
+const navLinks = Array.from(document.querySelectorAll('.section-nav-link, .mobile-section-nav-link'));
 const sections = navLinks
     .map((link) => document.querySelector(link.getAttribute('href')))
     .filter(Boolean);
@@ -44,7 +44,7 @@ window.addEventListener('resize', updateActiveNav);
 
 if (mobileMenuEl) {
     const mobileCollapse = new bootstrap.Collapse(mobileMenuEl, { toggle: false });
-    document.querySelectorAll('.mobile-section-nav__link').forEach((link) => {
+    document.querySelectorAll('.mobile-section-nav-link').forEach((link) => {
         link.addEventListener('click', () => {
             if (mobileMenuEl.classList.contains('show')) {
                 mobileCollapse.hide();

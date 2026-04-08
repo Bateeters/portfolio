@@ -58,7 +58,7 @@ function renderProjectCards() {
                     href="${escapeHtml(link.href)}"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="project-card__icon-link"
+                    class="project-card-icon-link"
                     aria-label="Open ${escapeHtml(project.title)} ${escapeHtml(link.label)}"
                 >
                     ${link.isGithub ? "GitHub" : "Live"}
@@ -73,35 +73,35 @@ function renderProjectCards() {
 
         const extraCount = Math.max((project.tech || []).length - 4, 0);
         const featured = project.featured
-            ? `<span class="project-card__eyebrow">Featured Project</span>`
+            ? `<span class="project-card-eyebrow">Featured Project</span>`
             : "";
 
         return `
             <article class="project-card" data-project-id="${escapeHtml(project.id)}">
-                <div class="project-card__body">
-                    <div class="project-card__content">
-                        <div class="project-card__header">
+                <div class="project-card-body">
+                    <div class="project-card-content">
+                        <div class="project-card-header">
                             <div>
                                 ${featured}
-                                <h3 class="project-card__title">${escapeHtml(project.title)}</h3>
+                                <h3 class="project-card-title">${escapeHtml(project.title)}</h3>
                             </div>
-                            <div class="project-card__actions">
+                            <div class="project-card-actions">
                                 ${quickLinks}
                             </div>
                         </div>
-                        <p class="project-card__description">${escapeHtml(project.description)}</p>
+                        <p class="project-card-description">${escapeHtml(project.description)}</p>
                         <div class="project-tags">
                             ${tech}
                             ${extraCount ? `<span class="project-tag project-tag--outline">+${extraCount} more</span>` : ""}
                         </div>
                     </div>
-                    <div class="project-card__cta-wrap">
-                        <button type="button" class="project-card__cta btn btn-link p-0" data-project-trigger="${escapeHtml(project.id)}">
+                    <div class="project-card-cta-wrap">
+                        <button type="button" class="project-card-cta btn btn-link p-0" data-project-trigger="${escapeHtml(project.id)}">
                             View Details
                         </button>
                     </div>
                 </div>
-                <div class="project-card__accent"></div>
+                <div class="project-card-accent"></div>
             </article>
         `;
     }).join("");
@@ -152,12 +152,12 @@ function populateModal(projectId) {
                 href="${escapeHtml(link.href)}"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="btn btn-primary project-modal__link"
+                class="btn btn-primary project-modal-link"
             >
                 ${escapeHtml(link.label)}
             </a>
         `).join("")
-        : `<span class="project-modal__hint">Links available upon request.</span>`;
+        : `<span class="project-modal-hint">Links available upon request.</span>`;
 }
 
 function bindProjectInteractions() {

@@ -20,28 +20,28 @@ function renderExperienceList() {
     experienceListEl.innerHTML = experiences.map((entry, index) => {
         const companyMarkup = entry.companyUrl
             ? `
-                <a href="${escapeHtml(entry.companyUrl)}" target="_blank" rel="noopener noreferrer" class="experience-entry__company-link">
+                <a href="${escapeHtml(entry.companyUrl)}" target="_blank" rel="noopener noreferrer" class="experience-entry-company-link">
                     ${escapeHtml(entry.company)}
                 </a>
             `
-            : `<span class="experience-entry__company-text">${escapeHtml(entry.company)}</span>`;
+            : `<span class="experience-entry-company-text">${escapeHtml(entry.company)}</span>`;
 
         return `
             <article class="experience-entry" style="animation-delay: ${index * 110}ms">
-                <div class="experience-entry__period-wrap">
-                    <span class="experience-entry__period">${escapeHtml(entry.period)}</span>
-                    <span class="experience-entry__timeline"></span>
+                <div class="experience-entry-period-wrap">
+                    <span class="experience-entry-period">${escapeHtml(entry.period)}</span>
+                    <span class="experience-entry-timeline"></span>
                 </div>
-                <div class="experience-entry__content">
-                    <div class="experience-entry__header">
-                        <h3 class="experience-entry__role">${escapeHtml(entry.role)}</h3>
+                <div class="experience-entry-content">
+                    <div class="experience-entry-header">
+                        <h3 class="experience-entry-role">${escapeHtml(entry.role)}</h3>
                         ${companyMarkup}
                     </div>
-                    <p class="experience-entry__description">${escapeHtml(entry.description)}</p>
-                    <ul class="experience-entry__achievements">
+                    <p class="experience-entry-description">${escapeHtml(entry.description)}</p>
+                    <ul class="experience-entry-achievements">
                         ${entry.achievements.map((achievement) => `
                             <li>
-                                <span class="experience-entry__bullet">&#8250;</span>
+                                <span class="experience-entry-bullet">&#8250;</span>
                                 <span>${escapeHtml(achievement)}</span>
                             </li>
                         `).join("")}
@@ -63,12 +63,12 @@ function renderResumeCta() {
     }
 
     resumeCtaEl.innerHTML = `
-        <p class="experience-resume__text mb-4">${escapeHtml(resumeCta.text)}</p>
+        <p class="experience-resume-text mb-4">${escapeHtml(resumeCta.text)}</p>
         <a
             href="${escapeHtml(resumeCta.href)}"
             target="_blank"
             rel="noopener noreferrer"
-            class="btn btn-primary px-4 py-3 experience-resume__link"
+            class="btn btn-primary px-4 py-3 experience-resume-link"
         >
             ${escapeHtml(resumeCta.label)}
         </a>

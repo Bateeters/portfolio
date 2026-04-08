@@ -29,24 +29,24 @@ function renderSkillCards() {
     }
 
     gridEl.innerHTML = skillCategories.map((category, index) => `
-        <div class="col-sm-6 col-xl-3">
+        <div class="col-6">
             <article
                 class="skills-card skills-card--${escapeHtml(category.tone)}"
                 data-skills-card
                 style="animation-delay: ${index * 90}ms"
             >
-                <div class="skills-card__wash"></div>
-                <div class="skills-card__inner">
+                <div class="skills-card-wash"></div>
+                <div class="skills-card-inner">
                     <div class="d-flex align-items-start justify-content-between gap-3 mb-4">
                         <div>
-                            <h3 class="skills-card__title">${escapeHtml(category.title)}</h3>
-                            <p class="skills-card__subtitle mb-0">${escapeHtml(category.subtitle)}</p>
+                            <h3 class="skills-card-title">${escapeHtml(category.title)}</h3>
+                            <p class="skills-card-subtitle mb-0">${escapeHtml(category.subtitle)}</p>
                         </div>
-                        <span class="skills-card__badge">${escapeHtml(category.badge)}</span>
+                        <span class="skills-card-badge">${escapeHtml(category.badge)}</span>
                     </div>
-                    <div class="skills-card__tags">
+                    <div class="skills-card-tags">
                         ${category.skills.map((skill) => `
-                            <span class="skills-card__tag">${escapeHtml(skill)}</span>
+                            <span class="skills-card-tag">${escapeHtml(skill)}</span>
                         `).join("")}
                     </div>
                 </div>
@@ -61,7 +61,7 @@ function renderCurrentlyExploring() {
     }
 
     exploringEl.innerHTML = currentlyExploring.map((item) => `
-        <span class="skills-exploring__tag">${escapeHtml(item)}</span>
+        <span class="skills-exploring-tag">${escapeHtml(item)}</span>
     `).join("");
 }
 
