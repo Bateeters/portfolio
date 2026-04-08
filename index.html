@@ -148,12 +148,26 @@
           <div class="row g-4">
             <div class="col-lg-7">
               <img id="project-modal-image" class="project-modal-image d-none" alt="">
-              <div>
-                <h3 class="project-modal-section-title">Overview</h3>
-                <p id="project-modal-overview" class="project-modal-copy mb-0"></p>
+              <div class="row g-3 project-modal-subcards">
+                <div class="col-md-6">
+                  <div class="project-modal-panel h-100">
+                    <h3 class="project-modal-section-title">The Challenge</h3>
+                    <ul id="project-modal-challenge" class="project-modal-list mb-0"></ul>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="project-modal-panel h-100">
+                    <h3 class="project-modal-section-title">The Solution</h3>
+                    <div id="project-modal-solution" class="project-tags"></div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-lg-5">
+              <div class="project-modal-overview">
+                <h3 class="project-modal-section-title">Overview</h3>
+                <p id="project-modal-overview" class="project-modal-copy mb-0"></p>
+              </div>
               <div class="project-modal-panel mb-4">
                 <h3 class="project-modal-section-title">Highlights</h3>
                 <ul id="project-modal-highlights" class="project-modal-list mb-0"></ul>
@@ -228,7 +242,7 @@
   <section id="contact" class="contact-section py-5 py-lg-6">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-xl-8 col-lg-10 col-11">
+        <div class="col-lg-9 col-11">
           <div class="contact-panel text-center">
             <span class="contact-section-eyebrow d-block mb-3">What's Next?</span>
             <h2 class="contact-section-title mb-4">Let's Build Something Together</h2>
@@ -238,10 +252,7 @@
 
             <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center gap-3 mb-5">
               <a href="mailto:BrianTeetersDesign@gmail.com" class="btn btn-primary contact-section-cta px-4 py-3">
-                Send a Message
-              </a>
-              <a href="mailto:BrianTeetersDesign@gmail.com" class="btn btn-outline-light contact-section-secondary px-4 py-3">
-                Email Directly
+                Email Me
               </a>
             </div>
 

@@ -83,7 +83,7 @@ function renderProjectCards() {
                         <div class="project-card-header">
                             <div>
                                 ${featured}
-                                <h3 class="project-card-title">${escapeHtml(project.title)}</h3>
+                                <h3 class="project-card-title" data-project-trigger="${escapeHtml(project.id)}">${escapeHtml(project.title)}</h3>
                             </div>
                             <div class="project-card-actions">
                                 ${quickLinks}

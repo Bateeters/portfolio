@@ -3,18 +3,55 @@
     --custom-dark-purple: rgb(16, 2, 29);
     --custom-navy: #0c081a;
     --custom-pink: #FF9FAF;
+    --custom-raspberry: #d96b86;
+    --custom-peach: #f1b7a1;
     --custom-yellow: #FFE4A3;
     --custom-teal: #BDE9D9;
     --custom-green: #D4F5A3;
 }
 
 body {
+    position: relative;
     background-color:var(--custom-navy);
     text-wrap: pretty;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+body::before {
+    background:
+        radial-gradient(circle at 18% 20%, rgba(241, 183, 161, 0.18), transparent 24%),
+        radial-gradient(circle at 82% 18%, rgba(217, 107, 134, 0.18), transparent 22%),
+        radial-gradient(circle at 68% 78%, rgba(241, 183, 161, 0.12), transparent 26%),
+        radial-gradient(circle at 24% 76%, rgba(217, 107, 134, 0.12), transparent 24%),
+        linear-gradient(140deg, rgba(255, 255, 255, 0.05), transparent 34%, rgba(255, 255, 255, 0.02) 56%, transparent 74%);
+    filter: blur(20px) saturate(115%);
+    transform: scale(1.08);
+    opacity: 0.72;
+    animation: liquidMetalFlow 22s ease-in-out infinite alternate;
+}
+
+body::after {
+    background:
+        radial-gradient(circle at 30% 34%, rgba(255, 255, 255, 0.07), transparent 32%),
+        radial-gradient(circle at 72% 62%, rgba(241, 183, 161, 0.065), transparent 30%),
+        radial-gradient(circle at 48% 80%, rgba(217, 107, 134, 0.06), transparent 26%);
+    mix-blend-mode: screen;
+    opacity: 0.36;
+    filter: blur(52px);
+    animation: metallicSheen 14s ease-in-out infinite;
 }
 
 html {
@@ -356,6 +393,7 @@ section[id] {
 }
 
 .project-card-title {
+    cursor: pointer;
     margin: 0;
     font-size: 1.35rem;
     transition: color 0.3s ease;
@@ -494,6 +532,14 @@ section[id] {
     object-fit: cover;
     border-radius: 1rem;
     margin-bottom: 1.5rem;
+}
+
+.project-modal-subcards {
+    margin-top: 0;
+}
+
+.project-modal-overview {
+    margin-bottom: 2rem;
 }
 
 .project-modal-panel {
@@ -833,13 +879,7 @@ section[id] {
 }
 
 .contact-panel {
-    padding: clamp(2rem, 5vw, 4rem);
-    border: 1px solid rgba(245, 183, 95, 0.16);
-    border-radius: 1.5rem;
-    background:
-        radial-gradient(circle at top, rgba(245, 183, 95, 0.08), transparent 48%),
-        rgba(255, 255, 255, 0.03);
-    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+    padding: clamp(2rem, 5vw, 4rem) 0;
 }
 
 .contact-section-eyebrow {
@@ -943,6 +983,40 @@ section[id] {
     }
 }
 
+@keyframes liquidMetalFlow {
+    0% {
+        transform: scale(1.08) translate3d(-3%, -2%, 0) rotate(0deg);
+        filter: blur(20px) saturate(112%);
+    }
+    33% {
+        transform: scale(1.14) translate3d(2.5%, 3%, 0) rotate(1.8deg);
+        filter: blur(24px) saturate(120%);
+    }
+    66% {
+        transform: scale(1.11) translate3d(3%, -2.5%, 0) rotate(-1.6deg);
+        filter: blur(18px) saturate(118%);
+    }
+    100% {
+        transform: scale(1.13) translate3d(-2%, 2.5%, 0) rotate(1.2deg);
+        filter: blur(22px) saturate(116%);
+    }
+}
+
+@keyframes metallicSheen {
+    0% {
+        transform: translate3d(-3%, -2%, 0) scale(1);
+        opacity: 0.28;
+    }
+    50% {
+        transform: translate3d(3%, 3%, 0) scale(1.08);
+        opacity: 0.42;
+    }
+    100% {
+        transform: translate3d(-2%, 2%, 0) scale(0.98);
+        opacity: 0.3;
+    }
+}
+
 strong {
     color: var(--custom-gold);
 }
@@ -1006,7 +1080,7 @@ li::marker {
 }
 
 .btn-primary {
-    background-color: var(--custom-dark-purple);
+    background-color: var(--custom-navy);
     border: 2px solid var(--custom-gold);
     transition: all 0.3s ease-in-out;
 
@@ -1015,7 +1089,7 @@ li::marker {
         transition: all 0.3s ease-in-out;
         background-color:var(--custom-gold);
         border: 2px solid var(--custom-gold);
-        color: indigo;
+        color: var(--custom-navy);
         font-weight: 600;
         box-shadow: none;
     }
