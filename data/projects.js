@@ -119,15 +119,37 @@ export const projects = [
     },
     {
         id: "5",
-        title: "Food Chain Rumble (WIP)",
-        eyebrow: "",
-        description: "Building a full-stack MERN app with authentication, leaderboards, and community features.",
+        title: "Food Chain Rumble Website (WIP)",
+        eyebrow: "Full-Stack Application Development",
+        description: "Full-stack MERN web application for a multiplayer game, featuring authentication, leaderboards, community forums, and dynamic stat tracking.",
+        overview: "Developed a full-stack promotional and community platform for a 3D platform brawler, designed to support player engagement and game data tracking. The application includes secure authentication, dynamic leaderboards, forums, and user-specific statistics powered by a MongoDB database. Built to scale with future game development, the system emphasizes reusable architecture and data-driven UI rendering.",
         highlights: [
-            "Implemented state management and REST APIs",
-            "Designed scalable database structure for user and match data"
+            "Built a full-stack MERN application deployed to production",
+            "Implemented JWT authentication with persistent login sessions",
+            "Created dynamic leaderboards with search and sorting functionality",
+            "Developed a Reddit-style forum system with user roles (Admin/Moderator)",
+            "Designed user stat tracking system (match history, ranks, performance metrics)",
+            "Structured app using reusable React components and Redux state management",
+            "Integrated MongoDB schemas/models for scalable data handling",
+            "Implemented role-based permissions for moderation and admin control"
         ],
-        tech: ["React", "Redux", "Node.js", "Express", "MongoDB", "Mongoose", "JWT", "REST API", "Render"],
+        tech: ["React", "Redux", "Node.js", "Express", "MongoDB", "Mongoose", "JWT Authentication", "REST APIs", "Full-Stack Architecture", "State Management", "Role-Based Access Control", "Deployment (Render)"],
         image: "./assets/images/projects/FCRMockup.jpg",
+        challenge: "Building a full-stack application from scratch required learning and integrating multiple unfamiliar technologies, particularly backend architecture and data management. The project needed to support authentication, persistent user data, and dynamic content while remaining scalable for future game integration. Structuring the application in a way that connected frontend, backend, and database layers was a significant challenge.",
+        solution: "Developed a modular MERN architecture using React for the frontend, Express/Node for the backend, and MongoDB for data storage. Implemented authentication with JWT, structured API routes and controllers for data handling, and used Redux for global state management. Designed the system to be fully data-driven, allowing content such as users, leaderboards, and forum posts to dynamically render from the database.",
+        impact: [
+            "Delivered a fully functional production-ready web application",
+            "Established a scalable foundation for future game integration",
+            "Enabled user engagement features (forums, stats, leaderboards)",
+            "Demonstrated ability to learn and implement full-stack systems independently",
+            "Showcased end-to-end development from database design → deployment"
+        ],
+        learned: [
+            "Structuring full-stack applications (routes, controllers, models)",
+            "Managing global state with Redux",
+            "Implementing secure authentication with JWT",
+            "Designing scalable, data-driven systems"
+        ],
         links: {
             "Live Site": "https://foodchainrumble.onrender.com",
             "GitHub Repo": "https://github.com/Bateeters/food-chain-rumble"

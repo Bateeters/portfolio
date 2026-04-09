@@ -4,7 +4,8 @@ const projectsListEl = document.getElementById("projects-list");
 const modalEl = document.getElementById("projectModal");
 
 const modalTitleEl = document.getElementById("project-modal-title");
-const modalEyebrowEl = document.getElementById("project-modal-eyebrow");
+const modalLearnedContainer = document.getElementById("project-learned-container");
+const modalLearnedEl = document.getElementById("project-modal-learned");
 const modalFeaturedEl = document.getElementById("project-modal-featured");
 const modalImageEl = document.getElementById("project-modal-image");
 const modalChallengeEl = document.getElementById("project-modal-challenge");
@@ -141,23 +142,26 @@ function populateModal(projectId) {
         modalImageEl.classList.add("d-none");
     }
 
-    modalImpactEl.innerHTML = (project.impact || []).length
-        ? project.impact
+    modalImpactEl.innerHTML = project.impact
+        .map((item) => `<li>${escapeHtml(item)}</li>`)
+        .join("");
+    
+    if (project.learned) {
+        modalLearnedContainer.classList.remove("d-none");
+        modalLearnedEl.innerHTML = project.learned
             .map((item) => `<li>${escapeHtml(item)}</li>`)
-            .join("")
-        : "<li>Additional project impact details available on request.</li>";
+            .join("");
+    } else {
+        modalLearnedContainer.classList.add("d-none");
+    }
 
-    modalHighlightsEl.innerHTML = (project.highlights || []).length
-        ? project.highlights
-            .map((item) => `<li>${escapeHtml(item)}</li>`)
-            .join("")
-        : "<li>Additional project context available on request.</li>";
+    modalHighlightsEl.innerHTML = project.highlights
+        .map((item) => `<li>${escapeHtml(item)}</li>`)
+        .join("");
 
-    modalTechEl.innerHTML = (project.tech || []).length
-        ? project.tech
-            .map((item) => `<span class=\"project-tag\">${escapeHtml(item)}</span>`)
-            .join("")
-        : "<span class=\"project-tag project-tag--outline\">Tech stack details available on request</span>";
+    modalTechEl.innerHTML = project.tech
+        .map((item) => `<span class=\"project-tag\">${escapeHtml(item)}</span>`)
+        .join("");
 
     modalLinksEl.innerHTML = links.length
         ? links.map((link) => `
