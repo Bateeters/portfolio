@@ -4,6 +4,7 @@ const projectsListEl = document.getElementById("projects-list");
 const modalEl = document.getElementById("projectModal");
 
 const modalTitleEl = document.getElementById("project-modal-title");
+const modalEyebrowEl = document.getElementById("project-modal-eyebrow");
 const modalFeaturedEl = document.getElementById("project-modal-featured");
 const modalImageEl = document.getElementById("project-modal-image");
 const modalChallengeEl = document.getElementById("project-modal-challenge");
@@ -77,7 +78,7 @@ function renderProjectCards() {
         const extraCount = Math.max((project.tech || []).length - 4, 0);
         const featured = project.featured
             ? `<span class="project-card-eyebrow">Featured Project</span>`
-            : "";
+            : `<span class="project-card-eyebrow">${project.eyebrow}</span>`;
 
         return `
             <article class="project-card" data-project-id="${escapeHtml(project.id)}">

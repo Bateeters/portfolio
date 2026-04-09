@@ -2,6 +2,7 @@ export const projects = [
     {
         id: "1",
         title: "CMS Search Component",
+        eyebrow: "Technical Depth",
         description: "Modern, reusable CMS search component designed for third-party travel sites, featuring real-time previewing and deep client customization.",
         overview: "Built a fully customizable search component within a legacy CMS to support a new external-facing product. The component allows non-technical users to configure layouts, inputs, and branding while previewing changes in real time. Developed from prototype to production under tight constraints, balancing modern UX improvements with legacy system limitations.",
         highlights: [
@@ -28,6 +29,7 @@ export const projects = [
     {
         id: "2",
         title: "Template System (Generic, Destination, & Supplier Pages)",
+        eyebrow: "Product / System Thinking",
         description: "Designed and built a scalable CMS template system for destination, supplier, and generic pages—improving site quality, consistency, and ease of use for non-technical users.",
         overview: "Created a library of modern, reusable page templates within a CMS to replace outdated designs and improve overall site quality. Balanced visual design with usability by ensuring all templates were fully editable by non-technical users. Led the process from design through production, including client approvals and launch.",
         highlights: [
@@ -60,6 +62,7 @@ export const projects = [
     {
         id: "3",
         title: "CMS Migration Initiative (V3 → V4)",
+        eyebrow: "Scale + Business Impact",
         description: "Led the migration of 300+ client websites from a legacy CMS version to a modern platform, reducing technical debt and improving performance, consistency, and maintainability.",
         overview: "Executed a large-scale migration initiative to transition legacy client websites from Version 3 to Version 4 of a CMS platform. The effort focused on reducing technical debt, improving performance, and consolidating development efforts into a single modern system. Managed site updates, custom rebuilds, and client communication throughout the process.",
         highlights: [
@@ -87,13 +90,29 @@ export const projects = [
     {
         id: "4",
         title: "Custom Timeline Component",
-        description: "Built a reusable content layout component based on a custom client design.",
+        eyebrow: "UI/UX + Adaptability",
+        description: "Designed and built a reusable timeline-style content component within a CMS, transforming a static layout into a flexible, responsive UI element.",
+        overview: "Originally created for a destination page, this component evolved into a reusable CMS element for displaying structured content in a visually engaging timeline format. Built entirely within CMS constraints using HTML and CSS, it allows users to customize content, layout, and styling without code. Special attention was given to responsive behavior, transforming the timeline into a mobile-friendly interactive layout.",
         highlights: [
-            "Created a one-off design that turned into a shared feature",
-            "Improved content structure and presentation"
+            "Designed and built a custom timeline-style page element from mockup to production",
+            "Fully customizable (images, text, colors, buttons, number of items)",
+            "Supports dynamic item management (add, remove, reorder)",
+            "Implemented responsive transformation from timeline → mobile card carousel",
+            "Introduced horizontal scroll + snap interaction for improved mobile UX",
+            "Reusable across any CMS page and client site",
+            "Built entirely within CMS constraints using raw HTML/CSS"
         ],
-        tech: ["HTML", "CSS", "JavaScript", "Component Design", "CMS"],
+        tech: ["HTML", "CSS", "Responsive Design", "UI Component Design", "CMS Development", "Interaction Design", "Mobile UX"],
         image: "./assets/images/projects/timeline.jpg",
+        challenge: "A visually engaging timeline-style layout was designed for a destination page but needed to be implemented within a CMS that lacked component-based architecture. The layout was not naturally suited for smaller screens, creating a challenge for responsiveness and usability. The solution also needed to remain fully editable for non-technical users.",
+        solution: "Recreated the timeline design using structured HTML and CSS within CMS constraints, making it fully reusable and customizable. Designed a responsive system that transforms the timeline into a horizontally scrollable card layout on mobile, improving usability and readability. Leveraged Bootstrap components and scroll-snapping behavior to create an intuitive, touch-friendly experience.",
+        impact: [
+            "Introduced a new reusable content format for displaying structured information",
+            "Expanded CMS capabilities without requiring changes to the core system",
+            "Improved visual variety and engagement across pages",
+            "Enabled non-technical users to create dynamic, visually rich layouts",
+            "Demonstrated scalable component thinking within a non-component-based system"
+        ],
         links: {
             "Dominica Example": "https://atlasandaura.vacationport.net/Info/Destination/DominicaHome"
         }
@@ -101,6 +120,7 @@ export const projects = [
     {
         id: "5",
         title: "Food Chain Rumble (WIP)",
+        eyebrow: "",
         description: "Building a full-stack MERN app with authentication, leaderboards, and community features.",
         highlights: [
             "Implemented state management and REST APIs",
