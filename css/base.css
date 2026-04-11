@@ -339,6 +339,31 @@ section[id] {
     animation: heroBounce 1.6s ease-in-out infinite;
 }
 
+/* Only what Bootstrap can't handle */
+.social-links {
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: opacity 700ms ease 600ms, transform 700ms ease 600ms;
+}
+
+.social-links.is-mounted {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: block;
+}
+.hero-icon {
+    color:white;
+}
+
+.hero-icon:hover {
+    color: var(--custom-gold);
+}
+
 .projects-showcase-title {
     font-size: clamp(1.6rem, 2.8vw, 2.2rem);
 }
@@ -612,7 +637,6 @@ section[id] {
 }
 
 .skills-section-intro {
-    max-width: 42rem;
     color: rgba(255, 255, 255, 0.78);
     line-height: 1.8;
 }
@@ -633,6 +657,11 @@ section[id] {
 .skills-card:hover {
     transform: translateY(-4px) scale(1.02);
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
+
+.skills-card:hover .skill-icon {
+    transition: color 0.3s ease;
+    color: var(--custom-gold);
 }
 
 .skills-card.is-muted {

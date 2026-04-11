@@ -42,7 +42,7 @@ function renderSkillCards() {
                             <h3 class="skills-card-title">${escapeHtml(category.title)}</h3>
                             <p class="skills-card-subtitle mb-0">${escapeHtml(category.subtitle)}</p>
                         </div>
-                        <span class="skills-card-badge">${escapeHtml(category.badge)}</span>
+                        <span class="skills-card-badge">${category.badge}</span>
                     </div>
                     <div class="skills-card-tags">
                         ${category.skills.map((skill) => `
