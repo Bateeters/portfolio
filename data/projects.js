@@ -30,7 +30,7 @@ export const projects = [
         id: "2",
         title: "Template System (Generic, Destination, & Supplier Pages)",
         eyebrow: "Product / System Thinking",
-        description: "Designed and built a scalable CMS template system for destination, supplier, and generic pages—improving site quality, consistency, and ease of use for non-technical users.",
+        description: "Designed and built a scalable CMS template system for destination, supplier, and generic pages leading to improved site quality, consistency, and ease of use for non-technical users.",
         overview: "Created a library of modern, reusable page templates within a CMS to replace outdated designs and improve overall site quality. Balanced visual design with usability by ensuring all templates were fully editable by non-technical users. Led the process from design through production, including client approvals and launch.",
         highlights: [
             "Took full initiative to identify and solve outdated template issues (no assigned task)",
@@ -111,7 +111,7 @@ export const projects = [
             "Expanded CMS capabilities without requiring changes to the core system",
             "Improved visual variety and engagement across pages",
             "Enabled non-technical users to create dynamic, visually rich layouts",
-            "Demonstrated scalable component thinking within a non-component-based system"
+            "Leveraged scalable component thinking within a non-component-based system"
         ],
         links: {
             "Dominica Example": "https://atlasandaura.vacationport.net/Info/Destination/DominicaHome"
@@ -141,8 +141,8 @@ export const projects = [
             "Delivered a fully functional production-ready web application",
             "Established a scalable foundation for future game integration",
             "Enabled user engagement features (forums, stats, leaderboards)",
-            "Demonstrated ability to learn and implement full-stack systems independently",
-            "Showcased end-to-end development from database design → deployment"
+            "Leveraged ability to learn and implement full-stack systems independently",
+            "Utilized end-to-end development from database design → deployment"
         ],
         learned: [
             "Structuring full-stack applications (routes, controllers, models)",
