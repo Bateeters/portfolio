@@ -145,7 +145,6 @@ section[id] {
 }
 
 .mobile-section-nav-toggler {
-    border: 1px solid rgba(245, 183, 95, 0.28);
     padding: 0.35rem 0.55rem;
     box-shadow: none !important;
 }
