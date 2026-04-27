@@ -77,6 +77,6 @@ All content is data-driven — updating projects, skills, or experience only req
 
 ## Contact
 
-- **Email:** BrianTeetersDesign@gmail.com
+- **Email:** brianteeters.dev@gmail.com
 - **LinkedIn:** [linkedin.com/in/brian-teeters-a23122134](https://www.linkedin.com/in/brian-teeters-a23122134/)
 - **GitHub:** [github.com/bateeters](https://github.com/bateeters)
