@@ -49,5 +49,5 @@ export const experiences = [
 export const resumeCta = {
     text: "Want the full details? Check out my complete resume.",
     label: "View Full Resume",
-    href: "./assets/resume/Brian Teeters Resume Web.pdf",
+    href: "./assets/resume/Brian_Teeters_Web_Resume.pdf",
 };
