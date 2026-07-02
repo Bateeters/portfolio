@@ -1,16 +1,15 @@
 export const experiences = [
     {
-        period: "2024 - Present",
-        role: "Software Developer I",
+        period: "Jul 2024 - Present",
+        role: "Software Developer",
         company: "VacationPort",
         companyUrl: "https://www.vacationport.com/",
         achievements: [
-            "Build and maintain CMS-driven client websites using HTML, CSS, JavaScript, and Bootstrap",
-            "Develop reusable UI components, including a configurable search feature used across multiple sites",
-            "Designed 10+ modern CMS templates, improving site quality and speeding up launch timelines",
-            "Migrated 300+ legacy websites to a new platform, reducing technical debt and supporting future development",
-            "Created 4 CMS themes to expand customization options for clients",
-            "Contributed as a core member of a 6–8 developer Agile team, turning client requirements into production-ready features",
+            "Led migration of 300+ CMS client sites from legacy to current infrastructure, reducing the internally maintained codebase by an estimated 25–30% and consolidating all 780+ active sites onto a single supported platform.",
+            "Built and shipped a configurable search component now live on the platform, plus a standalone version bringing the proprietary search API to competitor CMS platforms.",
+            "Designed and built 10+ CMS page templates and 4 themes from scratch, adopted across an estimated 50%+ of client sites and cutting new-site setup time by an estimated 35–45%.",
+            "Identified a mobile-usability gap in the legacy CMS and built a timeline component prototype with a scroll-snap mobile card experience, which became the baseline for the platform's production reusable component.",
+            "Contributed daily across C#, Razor, JavaScript, HTML, and CSS as part of a 6–8 person Agile team, through full sprint cycles, QA sign-off, and production releases.",
         ],
         technologies: [
             "JavaScript",
@@ -21,19 +20,19 @@ export const experiences = [
             "Responsive Design",
             "Wireframing",
             "Razor (C#)",
-            ".NET"
+            ".NET",
+            "GitHub Copilot",
         ],
     },
     {
-        period: "2017 - 2023",
+        period: "Dec 2017 - Mar 2023",
         role: "Senior Graphic Designer",
         company: "EZAdsPro",
         companyUrl: "",
         achievements: [
-            "Led design work for 50+ clients across digital and print",
-            "Turned marketing and branding goals into clean, user-focused designs",
-            "Helped shift legacy workflows toward more modern, digital-first approaches",
-            "Worked directly with clients to gather requirements and deliver tailored solutions",
+            "Designed and paginated 15–20 print marketing books featuring 100+ individual real estate agent advertisers, as a third-party design partner, from initial brief through final delivery.",
+            "Translated marketing goals and brand guidelines into structured, user-focused layouts. That same thinking now shows up in frontend architecture and UI decisions.",
+            "Drove internal production toward digital-first workflows, removing repetitive manual steps and improving consistency across deliverables.",
         ],
         technologies: [
             "Adobe Creative Cloud",
