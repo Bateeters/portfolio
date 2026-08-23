@@ -1,5 +1,5 @@
 export const skillsIntro =
-    "Front-end developer with full-stack capabilities and a design background. I build interfaces that are both beautiful and functional.";
+    "Software developer with a design background, building full-stack across React, TypeScript, and C#/ASP.NET Core. Using AI tools daily to move faster and ship better work.";
 
 export const skillCategories = [
     {
@@ -17,6 +17,8 @@ export const skillCategories = [
             "Bootstrap",
             "Responsive Design",
             "Accessibility",
+            "TypeScript",
+            "Redux",
         ],
     },
     {
@@ -35,6 +37,10 @@ export const skillCategories = [
             "REST APIs",
             "JWT Auth",
             "SQL / MySQL",
+            "PostgreSQL",
+            "C#",
+            "ASP.NET Core",
+            "EF Core",
         ],
     },
     {
@@ -64,20 +70,22 @@ export const skillCategories = [
         tone: "rose",
         skills: [
             "Git / GitHub",
+            "Claude / Claude Code",
+            "GitHub Copilot",
+            "ChatGPT",
             "Agile / Scrum",
             "Jira",
             "Asana",
             "Salesforce",
             "CI / CD",
-            "AI-Assisted Development",
+            "Docker",
         ],
     },
 ];
 
 export const currentlyExploring = [
-    "TypeScript",
     "Advanced React Patterns",
-    "C#",
-    "SQL",
+    "LLM / AI Integration",
     "Performance Optimization",
+    "System Design",
 ];

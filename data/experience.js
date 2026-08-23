@@ -9,7 +9,7 @@ export const experiences = [
             "Built and shipped a configurable search component now live on the platform, plus a standalone version bringing the proprietary search API to competitor CMS platforms.",
             "Designed and built 10+ CMS page templates and 4 themes from scratch, adopted across an estimated 50%+ of client sites and cutting new-site setup time by an estimated 35–45%.",
             "Identified a mobile-usability gap in the legacy CMS and built a timeline component prototype with a scroll-snap mobile card experience, which became the baseline for the platform's production reusable component.",
-            "Contributed daily across C#, Razor, JavaScript, HTML, and CSS as part of a 6–8 person Agile team, through full sprint cycles, QA sign-off, and production releases.",
+            "Works daily across C#, Razor, JavaScript, HTML, and CSS in a 6–8 person Agile team, using GitHub Copilot and ChatGPT across code drafting, debugging, code review, and documentation to increase throughput and output quality through each sprint cycle.",
         ],
         technologies: [
             "JavaScript",
@@ -22,6 +22,8 @@ export const experiences = [
             "Razor (C#)",
             ".NET",
             "GitHub Copilot",
+            "ChatGPT",
+            "SQL",
         ],
     },
     {
@@ -36,11 +38,10 @@ export const experiences = [
         ],
         technologies: [
             "Adobe Creative Cloud",
+            "Wireframing",
             "HTML",
             "CSS",
-            "JavaScript",
             "Responsive Design",
-            "Wireframing",
         ],
     },
 ];

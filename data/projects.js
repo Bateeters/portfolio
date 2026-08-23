@@ -1,6 +1,42 @@
 export const projects = [
     {
         id: "1",
+        title: "Proof",
+        eyebrow: "AI-Augmented Full-Stack Development",
+        description: "A full-stack cocktail recommendation web app built hands-on in React, TypeScript, and C#/ASP.NET Core. Writing real components, entities, DTOs, and API controllers through each phase, with Claude Code handling framework setup and infrastructure.",
+        overview: "Proof is a sophisticated cocktail companion app that recommends drinks based on taste profiles, season, available ingredients, and budget. Built as a structured, phased learning project across React, TypeScript, and C#/ASP.NET Core, using Claude Code as a paired programming tool for framework setup and infrastructure. Feature code is mine and includes React components, TypeScript types, C# entities, join tables, DTOs, and API controllers. The project is written with the goal of understanding each decision rather than just accepting generated output. Completed phases include JWT auth, multi-profile CRUD with claims-based authorization, external API integration caching 426 cocktails to PostgreSQL, dynamic multi-filter discovery endpoints, a keyword-based season heuristic algorithm, and taste preference CRUD. Full architecture, data model, and API design documented across the repo. 61+ commits and growing.",
+        highlights: [
+            "Writing React components, TypeScript types, C# entities, join tables, DTOs, and API controllers hands-on through each phase",
+            "Completed phases include JWT auth, multi-profile CRUD with claims-based authorization, and external API integration caching 426 cocktails to PostgreSQL",
+            "Built dynamic multi-filter discovery endpoints, a keyword-based season heuristic algorithm, and taste preference CRUD",
+            "Independently caught real bugs, including a PasswordHash security gap and a substring false-match in the season heuristic, before they were flagged",
+            "Full architecture, data model, and API design documented across the docs/ folder",
+            "Claude Code handles framework setup and infrastructure; all feature logic is mine",
+            "61+ commits and growing"
+        ],
+        tech: ["React", "TypeScript", "C#", "ASP.NET Core", "PostgreSQL", "EF Core", "JWT Authentication", "REST APIs", "Docker", "Claude Code", "AI-Paired Learning", "Full-Stack Architecture"],
+        image:"",
+        challenge: "I wanted to build real full-stack skills beyond the CMS and frontend work at my day job (specifically backend architecture, data modeling, and structured API design) while actually writing the code rather than just reading about it. The challenge was finding a learning approach that let me work on something real and deployable, with enough guidance to get through genuinely unfamiliar framework patterns (EF Core, ASP.NET Core DI, JWT middleware) without getting stuck on infrastructure every time I tried to write a feature.",
+        solution: "Structured the project as a phased build with Claude Code as a paired programming partner. Claude handles framework ceremony such as DI wiring, migrations, JWT middleware, CORS, scaffolding, and I write the feature code: entities, DTOs, controllers, React components, and TypeScript types. I push back when something doesn't make sense, ask why before applying a fix, and verify everything end-to-end before moving on. Each phase targets a specific set of concepts and builds on what came before.",
+        impact: [
+            "Writing and shipping real TypeScript and C# code across 6+ structured phases of a full-stack project",
+            "Independently caught real bugs including where a PasswordHash security gap exposed in an API response and a substring false-match in the season heuristic algorithm before they were flagged",
+            "Integrated external API data (426 cocktails from TheCocktailDB) into a local PostgreSQL cache with a custom sync service",
+            "Implemented JWT auth, claims-based authorization, multi-profile CRUD, and dynamic filtered endpoints across a production-structured codebase",
+            "Maintained comprehensive technical documentation covering architecture decisions, data model, API design, and session-by-session progress"
+        ],
+        learned: [
+            "How to write real C# entities, DTOs, and API controllers in ASP.NET Core and understanding the patterns well enough to apply them to new problems, not just copy them",
+            "Backend concepts that were entirely new: EF Core migrations, dependency injection, JWT claims-based auth, and IQueryable composition for dynamic filtering",
+            "TypeScript patterns in a real codebase: intersection types, null handling, controlled forms, and React Context chaining across multiple providers",
+            "How to work effectively with an AI coding pair including when to follow its lead, when to push back, and how to verify the output is actually doing what you intended"
+        ],
+        links: {
+            "GitHub Repo": "https://github.com/Bateeters/proof"
+        }
+    },
+    {
+        id: "2",
         title: "CMS Search Component",
         eyebrow: "Technical Depth",
         description: "Modern, reusable CMS search component designed for third-party travel sites, with real-time previewing and deep client customization.",
@@ -28,7 +64,7 @@ export const projects = [
         links: {}
     },
     {
-        id: "2",
+        id: "3",
         title: "Template System (Generic, Destination, & Supplier Pages)",
         eyebrow: "Product / System Thinking",
         description: "Designed and built a scalable CMS template system for destination, supplier, and generic pages, improving site quality, consistency, and ease of use for non-technical users.",
@@ -61,7 +97,7 @@ export const projects = [
         }
     },
     {
-        id: "3",
+        id: "4",
         title: "CMS Migration Initiative (V3 → V4)",
         eyebrow: "Scale + Business Impact",
         description: "Led the migration of 300+ client websites from a legacy CMS version to a modern platform, reducing technical debt and improving performance, consistency, and maintainability.",
@@ -88,6 +124,7 @@ export const projects = [
         ],
         links: {}
     },
+    /*
     {
         id: "4",
         title: "Custom Timeline Component",
@@ -114,6 +151,7 @@ export const projects = [
             "Dominica Example": "https://atlasandaura.vacationport.net/Info/Destination/DominicaHome"
         }
     },
+    */
     {
         id: "5",
         title: "Food Chain Rumble Website",

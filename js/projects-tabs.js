@@ -37,6 +37,10 @@ function getProjectLinks(project) {
 }
 
 function getProjectSummary(project) {
+    if (project.overview) {
+        return project.overview;
+    }
+
     if (project.longDescription) {
         return project.longDescription;
     }
